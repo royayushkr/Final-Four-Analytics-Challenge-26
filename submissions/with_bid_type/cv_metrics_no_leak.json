@@ -1,0 +1,10 @@
+{
+  "selection_accuracy": 1.0,
+  "seed_rmse_selected": 5.723907778530633,
+  "final_rmse_all": 2.4555195896799735,
+  "selected_count_oof_at_0_5": 249,
+  "prediction_strategy": "hard",
+  "selection_threshold": 0.3,
+  "include_bid_type": true,
+  "include_team": true
+}

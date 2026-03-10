@@ -1,0 +1,13 @@
+Submission Folder Audit (for judges)
+1) submissions/legacy -> EXTERNAL DATA USED (internet-derived historical seed mapping); do not use for judging.
+2) submissions/generated -> MIXED HISTORY (contains both local-model outputs and an externally sourced finalized sample); treat as non-clean.
+3) submissions/with_bid_type -> RAW FILES ONLY (uses train/test CSV + Bid Type column from provided data).
+4) submissions/no_external_best -> RAW FILES ONLY (best v2 local pipeline, no internet data).
+5) submissions/v3_no_external -> RAW FILES ONLY (v3 model, local train/test only).
+6) submissions/v3_ensemble -> RAW FILES ONLY (blend of local v2 + local v3 outputs only).
+7) submissions/v3_bidtype_hint, submissions/v3_bidtype_hint_with_team, submissions/v3_bid_hint_no_bid_feature -> RAW FILES ONLY (v3 variants).
+8) submissions/v3_strict and submissions/v3_strict_no_bid -> RAW FILES ONLY (strict no Bid Type usage).
+Recommended clean candidate to submit: submissions/v3_ensemble/submission_v3_ensemble.csv
+
+Detailed explanations are in:
+kaggle/SUBMISSION_AUDIT.md

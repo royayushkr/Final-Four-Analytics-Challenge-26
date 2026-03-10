@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+# Local experiment scratch
+tmp/
+scratch/
+
+# Notebook checkpoints
+.ipynb_checkpoints/

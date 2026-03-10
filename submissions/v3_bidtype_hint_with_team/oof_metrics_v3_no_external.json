@@ -1,0 +1,10 @@
+{
+  "oof_selection_accuracy_0_5": 1.0,
+  "oof_seed_rmse_selected": 5.622959983429885,
+  "oof_rmse_with_zero_threshold_0_5": 2.4122136354270696,
+  "use_bid_type_hint": true,
+  "include_bid_type_feature": true,
+  "include_team_feature": true,
+  "selected_count_test": 91,
+  "non_zero_count_test": 91
+}
