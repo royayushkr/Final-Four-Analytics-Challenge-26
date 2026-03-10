@@ -67,6 +67,39 @@ This document explains each submission folder, whether it is external-data free,
 
 ---
 
+## Code Walkthrough (`code/`)
+
+### `build_submission.py`
+- Base v2 pipeline.
+- Two-stage modeling:
+  - Selection classifier predicts tournament inclusion.
+  - Seed regressor predicts overall seed.
+- Includes win/loss parsing fixes and standard feature engineering.
+- Performs season-grouped CV and writes predictions + diagnostics.
+
+### `build_submission_v2.py`
+- Wrapper around `build_submission.py`.
+- Adds clean defaults and simple flags:
+  - `--include-bid-type`
+  - `--exclude-team`
+- Used for reproducible v2 experiments/output folders.
+
+### `build_submission_v3.py`
+- Improved local-only pipeline.
+- Adds stronger feature engineering:
+  - rank transforms
+  - weighted quadrant signals
+  - performance deltas
+- Uses ensemble seed modeling + season-local isotonic correction.
+- Applies season-constrained seed assignment to keep outputs structurally valid.
+
+### `build_submission_v3_ensemble.py`
+- Blends best local v2 output with v3 raw seed signal.
+- Uses weighted blend (`v2` + `v3`) then constrained assignment.
+- Produces the current best clean candidate under no-external-data policy.
+
+---
+
 ## Judge-Friendly Recommendation
 
 If judges require **strictly no external data**, submit from:
@@ -76,4 +109,3 @@ If judges require **strictly no external data**, submit from:
 If judges require **strict no `Bid Type` usage**, submit from:
 
 - `submissions/v3_strict_no_bid/submission_v3_no_external.csv`
-

@@ -66,3 +66,10 @@ python3 code/build_submission_v3.py --disable-bid-type-hint --disable-bid-type-f
 - `submissions/legacy/` keeps historical or invalid/leaky files for reference only.
 - Recommended clean no-external candidate:
   `submissions/v3_ensemble/submission_v3_ensemble.csv`
+
+## Documentation
+
+- Detailed submission-folder and code explanations:
+  [`docs/SUBMISSIONS_AND_CODE_GUIDE.md`](docs/SUBMISSIONS_AND_CODE_GUIDE.md)
+- Judge-facing submission audit:
+  [`kaggle/SUBMISSION_AUDIT.md`](kaggle/SUBMISSION_AUDIT.md)

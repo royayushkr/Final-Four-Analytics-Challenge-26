@@ -11,3 +11,4 @@ Recommended clean candidate to submit: submissions/v3_ensemble/submission_v3_ens
 
 Detailed explanations are in:
 kaggle/SUBMISSION_AUDIT.md
+docs/SUBMISSIONS_AND_CODE_GUIDE.md
