@@ -5,3 +5,5 @@ xgboost
 lightgbm
 catboost
 openpyxl
+requests
+beautifulsoup4

@@ -1,845 +1,603 @@
 # Final-Four-Analytics-Challenge-26
 
-This is the single source of documentation for this repository.
-It combines project structure, model design, submission catalog, leakage policy, and experiment history so contributors can work without reading source code first.
+This repository now reflects the final private `v8` NCAA seed prediction pipeline for the `2025-26` season.
 
-## 1) Competition Objective
+The documentation is intentionally structured with the final production path first and the older Kaggle-style iteration history at the bottom. A reader should be able to understand what was submitted, how it was produced, what data was used, and why the model was chosen without reading the source code.
 
-The repository targets the NCAA Final Four Analytics Challenge seed prediction task.
+## 1) Final Deliverables
 
-- Prediction target: `Overall Seed`
-- Evaluation metric: RMSE between predicted and observed seeds
-- Submission format: `RecordID,Overall Seed`
-- Tournament framing in this project: non-selected teams are predicted as `0`, selected teams are assigned seeds in `[1, 68]`
-
-## 2) Repository Structure
-
-```text
-final-four-analytics-challenge-26/
-├── requirements.txt
-├── code/
-│   ├── build_submission.py
-│   ├── build_submission_v2.py
-│   ├── build_submission_v3.py
-│   ├── build_submission_v3_ensemble.py
-│   ├── build_submission_v4.py
-│   ├── build_submission_v5.py
-│   ├── build_submission_v5_ensemble.py
-│   ├── build_submission_v6.py
-│   ├── build_submission_v3_ensemble.ipynb
-│   ├── run_v5_experiments.py
-│   ├── v5_config.py
-│   └── v5_features.py
-├── data/
-│   └── raw/
-│       ├── NCAA_Seed_Training_Set2.0.csv
-│       ├── NCAA_Seed_Test_Set2.0.csv
-│       ├── submission_template2.0.csv
-│       └── FFAC Data Dictionary.xlsx
-├── kaggle/
-│   └── final_four_end_to_end_kaggle_notebook.ipynb
-├── submissions/
-│   ├── generated/
-│   ├── legacy/
-│   ├── no_external_best/
-│   ├── v3_bid_hint_no_bid_feature/
-│   ├── v3_bidtype_hint/
-│   ├── v3_bidtype_hint_with_team/
-│   ├── v3_ensemble/
-│   ├── v3_no_external/
-│   ├── v3_strict/
-│   ├── v3_strict_no_bid/
-│   ├── v4_selected_seed/
-│   ├── v6/
-│   ├── with_bid_type/
-│   ├── v5_ensemble/
-│   └── v5_experiments/
-└── README.md
-```
-
-## 3) Data Inputs and Scope
-
-Official files used by all clean pipelines:
-
-- `data/raw/NCAA_Seed_Training_Set2.0.csv`
-- `data/raw/NCAA_Seed_Test_Set2.0.csv`
-- `data/raw/submission_template2.0.csv` (format reference)
-- `data/raw/FFAC Data Dictionary.xlsx` (schema support)
-
-No script in `code/` requires internet or external downloads.
-
-## 4) Leakage and Compliance Policy
-
-This project contains historical outputs from multiple development phases. Some artifacts are archive-only.
-
-### Clean-policy definition used here
-
-An artifact is considered competition-guideline compliant in this repository when:
-
-- it is generated only from `data/raw/*`,
-- it does not merge external web/internet mappings,
-- it does not use future-season labels from test rows.
-
-### Folder compliance classification
-
-- `submissions/legacy`: contains archived externally influenced output. Keep for history only.
-- `submissions/generated`: mixed-history folder from early experimentation. Contains both clean and non-clean historical artifacts.
-- all other `submissions/*` folders: generated from local project files only.
-
-## 5) End-to-End Modeling Workflow (High Level)
-
-All model versions follow a shared two-part logic:
-
-1. Predict tournament selection tendency (explicitly or implicitly).
-2. Predict a seed score and convert it to legal season-consistent seed assignments.
-
-Shared technical patterns:
-
-- Parse and repair malformed W-L strings such as `8-Sep`, `Apr-00`.
-- Engineer W/L/PCT-style features from record columns.
-- Use season-aware validation (GroupKFold grouped by `Season`).
-- Clip seed predictions to the valid range and write Kaggle-ready CSVs.
-
-## 6) Code Walkthrough (No Code Reading Required)
-
-### `code/build_submission.py` (Core v2 pipeline)
-
-Purpose:
-
-- Base leakage-safe trainer/inference pipeline for v2 family runs.
-
-How it works:
-
-1. Loads train and test CSV files.
-2. Parses record fields (`WL`, `Conf.Record`, `Quadrant*`, etc.) into wins/losses/games/win%.
-3. Builds additional features:
-   `NET_Improvement`, `OppNetDiff`, `SOS_Diff`, plus parsed record derivatives.
-4. Preprocesses with:
-   numeric median imputation and categorical one-hot encoding.
-5. Trains:
-   `XGBClassifier` for selected-vs-non-selected and `XGBRegressor` for seed values.
-6. Runs GroupKFold CV by season and evaluates candidate blending strategies:
-   `hard`, `soft`, `soft-threshold`.
-7. Chooses best strategy if `--prediction-strategy auto`.
-8. Fits on full train and writes outputs.
-
-Outputs:
-
-- `submission_seed_only_no_leak.csv`
-- `submission_no_leak_v2.csv`
-- `test_selection_probabilities_no_leak.csv`
-- `cv_metrics_no_leak.json`
-
-Main toggles:
-
-- `--include-bid-type`
-- `--exclude-team`
-- `--prediction-strategy`
-- `--selection-threshold`
-
-### `code/build_submission_v2.py` (v2 wrapper runner)
-
-Purpose:
-
-- Reproducible launcher around `build_submission.py`.
-
-How it works:
-
-1. Resolves default project paths.
-2. Forces `--prediction-strategy auto`.
-3. Passes user toggles (`--include-bid-type`, `--exclude-team`) through.
-
-Why it exists:
-
-- Easy repeatable runs into named output folders without manually rebuilding long CLI commands.
-
-### `code/build_submission_v3.py` (Stronger no-external-data pipeline)
-
-Purpose:
-
-- Higher-capacity v3 model with richer feature engineering and constrained post-processing.
-
-How it works:
-
-1. Extends v2 feature set with:
-   rank inverse/log transforms, margin features, weighted quadrant scores, game-share and performance-delta features.
-2. Trains selection model:
-   `XGBClassifier` for inclusion probability.
-3. Trains seed score ensemble:
-   two `XGBRegressor` models blended as `0.55 * reg1 + 0.45 * reg2`.
-4. Learns season-local isotonic models from seeded training rows:
-   maps `NET Rank -> Seed` shape per season.
-5. Creates combined season ordering score from:
-   raw seed prediction, local isotonic prediction, and NET rank.
-6. Determines selected flags per season using target counts with optional `Bid Type` hint.
-7. Assigns legal seeds from the season-specific available seed set
-   (seeds missing in train for that season).
-8. Writes submission + diagnostics + OOF metrics.
-
-Outputs:
-
-- `submission_v3_no_external.csv`
-- `diagnostics_v3_no_external.csv`
-- `oof_metrics_v3_no_external.json`
-
-Main toggles:
-
-- `--disable-bid-type-hint`
-- `--disable-bid-type-feature`
-- `--exclude-team-feature`
-- `--tournament-size`
-
-### `code/build_submission_v3_ensemble.py` (v2+v3 blend)
-
-Purpose:
-
-- Blend strongest local v2 and v3 signals into one final candidate.
-
-How it works:
-
-1. Ensures required local inputs exist:
-   - v2 file: `submissions/no_external_best/submission_no_leak_v2.csv`
-   - v3 diagnostics: `submissions/v3_no_external/diagnostics_v3_no_external.csv`
-2. Auto-runs missing prerequisites by calling local scripts only:
-   `build_submission_v2.py` and `build_submission_v3.py`.
-3. Blends score:
-   `score = w2 * v2_overall_seed + w3 * v3_seed_pred_raw`.
-4. Uses test `Bid Type` non-null rows as selected teams.
-5. Reassigns season-consistent available seeds.
-6. Writes final ensemble submission.
-
-Outputs:
-
-- `submissions/v3_ensemble/submission_v3_ensemble.csv`
-
-External-data status:
-
-- No internet usage.
-- No dependency on legacy external artifacts.
-- Uses only local files and locally generated clean predictions.
-
-## 7) `Bid Type`, `Hint`, and Model Behavior
-
-These terms are intentionally separated in this project:
-
-### `Bid Type` as feature
-
-- The column `Bid Type` is passed into the ML feature matrix.
-- Affects fitted model parameters directly.
-- Usually improves selection accuracy because this field is highly informative.
-
-### `Bid Type` as hint
-
-- Used only in post-processing selection logic.
-- Example in v3:
-  if `Bid Type` is non-null, those rows get priority in selected-team allocation for the season.
-- Does not directly train regression coefficients on that step.
-
-### Related model dimensions
-
-- `Team` feature included/excluded:
-  affects identity memorization vs generalization.
-- strict mode:
-  disables both `Bid Type` feature and `Bid Type` hint.
-- ensemble mode:
-  combines already-generated v2 and v3 signals, then performs constrained assignment.
-
-## 8) Submission Folder Catalog (Comprehensive)
-
-All submission folders and their intent are documented below.
-
-| Folder | External Data Used | Model Family | Bid Type Feature | Bid Type Hint | Team Feature | Typical Files | Recommended Usage |
-|---|---|---|---|---|---|---|---|
-| `submissions/legacy` | Yes (historical archive) | older pre-clean artifact | mixed/unknown | mixed/unknown | mixed/unknown | `submission_v2_leaked.csv` | Archive only. Do not use for clean competition submission. |
-| `submissions/generated` | Mixed history | early v2 and transitional outputs | mixed | mixed | mixed | `submission_finalized.csv`, `submission_no_leak_v2.csv`, diagnostics, metrics | Development traceability only, not primary handoff folder. |
-| `submissions/with_bid_type` | No | v2 | Yes | implicit through model behavior | Yes | v2 submission, seed-only file, probabilities, CV metrics | Clean v2 run with team + bid type enabled. |
-| `submissions/no_external_best` | No | v2 | Yes | implicit through model behavior | No | v2 submission, seed-only file, probabilities, CV metrics | Best v2 clean baseline. |
-| `submissions/v3_no_external` | No | v3 | Yes | Yes | Yes | v3 submission, diagnostics, OOF metrics | Primary single-model v3 output. |
-| `submissions/v3_ensemble` | No | v3 ensemble (v2+v3) | Yes via source models | Yes via source models | mixed from source models | `submission_v3_ensemble.csv` | Historical clean ensemble candidate from the pre-v4 pipeline stage. |
-| `submissions/v3_bidtype_hint` | No | v3 variant | Yes | Yes | No | v3 submission, diagnostics, OOF metrics | Variant to isolate effect of removing team feature. |
-| `submissions/v3_bidtype_hint_with_team` | No | v3 variant | Yes | Yes | Yes | v3 submission, diagnostics, OOF metrics | Variant equivalent to default v3 configuration in current artifacts. |
-| `submissions/v3_bid_hint_no_bid_feature` | No | v3 variant | No | Yes | No | v3 submission, diagnostics, OOF metrics | Variant to test hint-only behavior without bid feature. |
-| `submissions/v3_strict` | No | v3 strict variant | No | No | Yes | v3 submission, diagnostics, OOF metrics | Conservative strict-mode benchmark. |
-| `submissions/v3_strict_no_bid` | No | v3 strict variant | No | No | Yes | v3 submission, diagnostics, OOF metrics | Same strict setting as above, kept as separate run folder. |
-| `submissions/v4_selected_seed` | No | v4 selected-team ranker | Yes | Yes through selection policy | Yes | `submission_v4.csv`, diagnostics, OOF metrics | Best current competition-facing candidate in this repository. |
-| `submissions/v6` | No | v6 hedge candidates anchored on `v3_ensemble` | inherited from source models | Yes through selection policy | inherited from source models | `submission_v6.csv`, candidate CSVs, candidate summary | Current best hedge folder for leaderboard testing after the v5 audit. |
-| `submissions/v5_experiments` | No | v5 ablation framework outputs | configurable per experiment | Yes through selection policy | configurable per experiment | summary table, per-run OOF/test predictions, feature importances, submissions | Research and audit folder for v5, not a single direct submit target. |
-| `submissions/v5_ensemble` | No | v5 rank-blend ensemble | inherited from base runs | Yes through selection policy | inherited from base runs | `submission.csv`, OOF/test predictions, experiment summary | Implemented for completeness, but not recommended based on offline results. |
-
-## 9) Local Metrics Snapshot from Saved Artifacts
-
-These values are read from JSON files already present in `submissions/*`.
-They are useful for internal comparison and do not guarantee public leaderboard ranking.
-
-### v2-family metrics (`cv_metrics_no_leak.json`)
-
-| Folder | Selection Accuracy | Seed RMSE (Selected) | Final RMSE (All Rows) | Strategy |
-|---|---|---|---|---|
-| `generated` | 0.9387 | 5.7124 | 12.2746 | `soft @ 0.5` |
-| `with_bid_type` | 1.0000 | 5.7239 | 2.4555 | `hard @ 0.3` |
-| `no_external_best` | 1.0000 | 5.4881 | 2.3544 | `hard @ 0.3` |
-
-### v3-family metrics (`oof_metrics_v3_no_external.json`)
-
-| Folder | OOF Selection Acc (@0.5) | OOF Seed RMSE (Selected) | OOF RMSE (Zero-threshold @0.5) | Bid Type Feature | Bid Type Hint |
-|---|---|---|---|---|---|
-| `v3_no_external` | 1.0000 | 5.6230 | 2.4122 | Yes | Yes |
-| `v3_bidtype_hint_with_team` | 1.0000 | 5.6230 | 2.4122 | Yes | Yes |
-| `v3_bidtype_hint` | 1.0000 | 5.5662 | 2.3879 | Yes | Yes |
-| `v3_bid_hint_no_bid_feature` | 0.9342 | 5.5657 | 14.2479 | No | Yes |
-| `v3_strict` | 0.9372 | 5.6667 | 13.9081 | No | No |
-| `v3_strict_no_bid` | 0.9372 | 5.6667 | 13.9081 | No | No |
-
-## 10) Version Journey and Why Each Version Exists
-
-This section documents how the repository evolved.
-
-### Phase A: early baseline and mixed artifacts
-
-- Initial outputs landed in `submissions/generated`.
-- That folder became a mixed bucket with both clean and historical/transitional files.
-- One separate archive artifact with external influence was preserved in `submissions/legacy`.
-
-### Phase B: leakage-safe v2 foundation
-
-- Built `build_submission.py` and `build_submission_v2.py`.
-- Enforced train/test-only workflow from local files.
-- Added season-grouped CV and automatic blending strategy selection.
-- Produced stable clean runs in `with_bid_type` and `no_external_best`.
-
-### Phase C: v3 feature and post-processing upgrade
-
-- Introduced richer feature engineering in `build_submission_v3.py`.
-- Added two-regressor seed ensemble.
-- Added season-local isotonic adjustment.
-- Added season-constrained seed assignment to preserve bracket structure.
-- Produced `v3_no_external` and controlled ablation variants.
-
-### Phase D: v3 variant experiments
-
-- Tested whether performance comes from `Bid Type` as feature, `Bid Type` as hint, `Team` feature, or strict removal.
-- Captured ablations in `v3_bidtype_hint`, `v3_bidtype_hint_with_team`, `v3_bid_hint_no_bid_feature`, `v3_strict`, and `v3_strict_no_bid`.
-- Result pattern: removing both bid feature and hint substantially hurts selection quality.
-
-### Phase E: v3 ensemble candidate
-
-- Implemented `build_submission_v3_ensemble.py`.
-- Blended clean v2 and v3 signals.
-- Re-applied season-constrained assignment.
-- Saved the ensemble candidate in `submissions/v3_ensemble/submission_v3_ensemble.csv`.
-
-### Phase F: v4 selected-team ranker
-
-- Added `build_submission_v4.py` to treat the task more explicitly as seeded-team ranking followed by legal seed assignment.
-- Kept selection tied to provided official fields rather than external sources.
-- Saved candidate outputs in `submissions/v4_selected_seed/`.
-- This branch produced the strongest known public leaderboard result in this repository lineage before v5 work began.
-
-### Phase G: v5 non-market upgrade and audit
-
-- Added a modular experiment framework:
-  `v5_config.py`, `v5_features.py`, `build_submission_v5.py`, `run_v5_experiments.py`, and `build_submission_v5_ensemble.py`.
-- Standardized the primary offline evaluator around seeded-team `season_rank_rmse`.
-- Added reproducible ablation outputs, fold metrics, OOF predictions, test predictions, and feature importance exports.
-- Explicitly audited `goto_conversion` and `efficient_shin_conversion` and kept them out of the main pipeline because the dataset has no bookmaker-odds or implied-probability inputs.
-
-### Phase H: v6 leaderboard hedge
-
-- Added `build_submission_v6.py`.
-- Kept `v3_ensemble` as the anchor because it remains the best verified public-leaderboard submission in this repository.
-- Built conservative hedge candidates that only change a handful of seeded-team assignments where multiple newer models disagree with the original ensemble.
-- Saved candidate files and change summaries in `submissions/v6/`.
-
-## 11) V5 Upgrade and Results
-
-### What changed from v4 to v5
-
-v5 is primarily a framework and feature-engineering upgrade rather than a single hand-tuned script.
-
-Key additions:
-
-- experiment registry in `code/v5_config.py`
-- reusable feature builders in `code/v5_features.py`
-- unified single-run trainer in `code/build_submission_v5.py`
-- batch ablation runner in `code/run_v5_experiments.py`
-- rank-blend ensemble builder in `code/build_submission_v5_ensemble.py`
-- dependency pinning in `requirements.txt`
-
-New feature blocks implemented:
-
-- `core_parsed`
-- `missing_indicators`
-- `season_relative`
-- `conference_relative`
-- `robust_numeric`
-- `interaction_refinements`
-- `team_conference_encoding`
-
-New model families evaluated:
-
-- `Ridge`
-- `XGBRegressor`
-- `LGBMRegressor`
-- `CatBoostRegressor`
-- `ExtraTreesRegressor` for the reproduced `current_v4` comparison
-
-### Validation design
-
-Primary offline metric:
-
-- `season_rank_rmse`
-- For each season, rank predicted seeded-team scores and assign the observed season seed set before computing RMSE.
-
-Secondary sanity metric:
-
-- `full_rmse_zero`
-- Non-selected rows are set to zero to mimic the full Kaggle submission shape.
-
-Stability metric:
-
-- fold-wise standard deviation of `season_rank_rmse`
-
-Selection policy used in v5:
-
-- test selected rows are the rows with non-null `Bid Type`
-- this matched the expected held-out tournament slot count exactly: `91` test rows
-
-### Market-method relevance verdict
-
-`goto_conversion` and `efficient_shin_conversion` were reviewed and intentionally excluded from the main pipeline.
-
-Reason:
-
-- they convert bookmaker odds or prices into implied probabilities
-- this dataset has no odds, prices, overround, or market books
-- our model outputs are rank/seed scores, not mutually exclusive market prices
-
-Result:
-
-- `v5_goto`: `SKIPPED_NO_MARKET_INPUTS`
-- `v5_shin`: `SKIPPED_NO_MARKET_INPUTS`
-- `v5_market_all`: `SKIPPED_NO_MARKET_INPUTS`
-- `v5_mult_baseline`: `SKIPPED_NO_MARKET_INPUTS`
-
-### V5 experiment summary
-
-The full batch table is written to `submissions/v5_experiments/experiment_summary_table.csv`.
-
-Best completed runs by the primary offline metric:
-
-| Rank | Experiment | Model | Season Rank RMSE | Fold Std | Full RMSE Zero | Notes |
-|---|---|---|---:|---:|---:|---|
-| 1 | `v5_base_core` | `lightgbm` | 4.1075 | 1.5633 | 1.7608 | Best mean, but unstable across folds |
-| 2 | `v5_base_core_missing` | `lightgbm` | 4.1075 | 1.5633 | 1.7608 | Same as above; missing flags added no gain |
-| 3 | `current_v4` | `ridge` | 4.2235 | 0.8812 | 1.8126 | Best stable baseline reproduced under v5 metric |
-| 4 | `v5_base_conference_relative` | `ridge` | 4.2235 | 0.8812 | 1.8126 | Effectively matched reproduced v4 |
-| 5 | `v5_base_season_relative` | `ridge` | 4.2461 | 0.8909 | 1.8223 | Season-relative block helped more than raw core ridge |
-| 6 | `v5_base_target_safe_encodings` | `ridge` | 4.2623 | 0.4674 | 1.8283 | Most stable ridge variant, but not best mean |
-| 7 | `v5_base_full` | `ridge` | 4.2623 | 0.4674 | 1.8283 | Full non-market stack matched target-safe ridge |
-| 8 | `v5_base_target_safe_encodings` | `catboost` | 4.4724 | 0.9272 | 1.9188 | Best CatBoost variant |
-
-Important negative result:
-
-- the richer full-stack feature set hurt `xgb` and `lightgbm` materially
-- `v5_base_full/xgb` rose to `7.0914`
-- `v5_base_full/lightgbm` rose to `6.8472`
-- this indicates the encoding-heavy full feature block is overfitting for tree boosters on the seeded-row sample size
-
-### Ensemble result
-
-The saved v5 ensemble lives in `submissions/v5_ensemble/`.
-
-Chosen base runs:
-
-- `v5_base_core/lightgbm`
-- `current_v4/ridge`
-- `v5_base_target_safe_encodings/catboost`
-
-Saved blend weights:
-
-- `0.20` on `v5_base_core/lightgbm`
-- `0.65` on `current_v4/ridge`
-- `0.15` on `v5_base_target_safe_encodings/catboost`
-
-Observed result:
-
-- `v5_ensemble` season-rank RMSE = `4.9251`
-- worse than the best single-model ridge baseline
-
-Interpretation:
-
-- the ensemble was implemented and logged, but it is not the recommended v5 output
-- the base models are too correlated or too noisy for this rank-blend to help
-
-### Feature relevance snapshot
-
-`v5_base_core/lightgbm` top signals:
-
-- `SEED_STRENGTH_HEUR`
-- `CONF_GAME_SHARE`
-- `Q1_GAME_SHARE`
-- `CONF_PERF_DELTA`
-- `WL_PCT`
-- `Q_GOOD_WIN_SHARE`
-
-`current_v4/ridge` top signals:
-
-- `NET Rank_LOG`
-- `PrevNET_LOG`
-- `PrevNET_SEASON_PCT`
-- `NET Rank_SEASON_PCT`
-- conference indicators
-- `Bid Type` categories
-
-`v5_base_target_safe_encodings/ridge` top signals:
-
-- `PrevNET_CONF_PCT`
-- `NET Rank_CONF_PCT`
-- `PrevNET_LOG`
-- `NET Rank_LOG`
-- `Team_SEED_TE`
-- `Conference_SEED_TE`
-
-### Diagnosis after implementation
-
-Why v4 remains hard to beat:
-
-- the seeded training sample is only `249` rows, so high-capacity tree models overfit quickly
-- `Bid Type` already resolves much of the selection problem, leaving v5 to win only on fine-grained seed ordering
-- rank-assignment post-processing matters as much as raw regression loss here
-- stable linear structure is outperforming more complex models on the current feature blocks
-
-What v5 accomplished anyway:
-
-- standardized evaluation
-- modularized feature engineering
-- added fold-safe target encoding
-- made market-method irrelevance explicit and auditable
-- created a reproducible ablation framework for v6
-
-## 12) V6 Hedge Strategy
-
-### Why v6 exists
-
-v5 improved the research framework, but it did not beat the known public-leaderboard result from `v3_ensemble`.
-
-That changed the design goal for v6:
-
-- do not replace `v3_ensemble` wholesale
-- keep the proven baseline ordering as the anchor
-- make only a few defensible swaps where other local models agree against the baseline
-
-### v6 methodology
-
-Inputs used:
-
-- v2 final prediction from `submissions/no_external_best/submission_no_leak_v2.csv`
-- v3 raw and local-isotonic diagnostics from `submissions/v3_no_external/diagnostics_v3_no_external.csv`
-- v5 single-model score outputs:
-  - `current_v4/ridge`
-  - `v5_base_core/lightgbm`
-  - `v5_base_full/ridge`
-
-Anchor score:
-
-- `base_score = 0.60 * v2_overall_seed + 0.40 * v3_seed_pred_raw`
-- this matches the structure that produced `v3_ensemble`
-
-Additional hedge signals:
-
-- `v3_order_rank`
-- `v5_cur_ridge_rank`
-- `v5_lgbm_rank`
-- `v5_ridge_rank`
-
-### Saved v6 candidates
-
-All candidates are written under `submissions/v6/`.
-
-Primary file:
-
-- `submissions/v6/submission_v6.csv`
-
-Candidate table:
-
-| Candidate | Weights | Rows Changed vs `v3_ensemble` | Intended Use |
-|---|---|---:|---|
-| `v6_primary` | `0.65 base + 0.175 v5_ridge_rank + 0.175 v3_order_rank` | 2 | Main submit hedge |
-| `v6_conservative_low_seed` | `0.75 base + 0.25 v5_cur_ridge_rank` | 2 | Very low-risk alternate |
-| `v6_aggressive_ridge` | `0.75 base + 0.25 v5_ridge_rank` | 4 | Higher-variance alternate |
-| `v6_lgbm_low_seed` | `0.75 base + 0.25 v5_lgbm_rank` | 2 | Low-impact LightGBM alternate |
-
-Actual `v6_primary` changes versus `v3_ensemble`:
-
-- `2021-22-Davidson`: `47 -> 43`
-- `2021-22-NotreDame`: `43 -> 47`
-
-Why those two rows were chosen for the primary file:
-
-- they are supported by `v3` final constrained assignment
-- they are supported by `v4`
-- they are supported by the v5 single-model variants
-- the hedge changes only two rows, so it preserves most of the best known baseline
-
-## 13) Reproducible Runbook
-
-### Environment
-
-Install all dependencies used by the current repository:
-
-```bash
-python3 -m pip install -r requirements.txt
-```
-
-### Run v2 default
-
-```bash
-python3 code/build_submission_v2.py
-```
-
-### Run v3 default
-
-```bash
-python3 code/build_submission_v3.py
-```
-
-### Run v3 ensemble
-
-```bash
-python3 code/build_submission_v3_ensemble.py
-```
-
-### Run v4
-
-```bash
-python3 code/build_submission_v4.py
-```
-
-### Run one v5 experiment
-
-Example: full non-market ridge run
-
-```bash
-python3 code/build_submission_v5.py \
-  --experiment v5_base_full \
-  --model-family ridge
-```
-
-### Run the full v5 ablation matrix
-
-```bash
-python3 code/run_v5_experiments.py
-```
-
-Main outputs:
-
-- `submissions/v5_experiments/experiment_summary_table.csv`
-- per-run `fold_metrics.csv`
-- per-run `oof_predictions.csv`
-- per-run `test_predictions.csv`
-- per-run `feature_importance.csv`
-- per-run `submission.csv`
-
-### Run the v5 ensemble
-
-```bash
-python3 code/build_submission_v5_ensemble.py
-```
-
-Main outputs:
-
-- `submissions/v5_ensemble/oof_predictions.csv`
-- `submissions/v5_ensemble/test_predictions.csv`
-- `submissions/v5_ensemble/submission.csv`
-- `submissions/v5_ensemble/experiment_summary.json`
-
-### Run v6 hedge candidates
-
-```bash
-python3 code/build_submission_v6.py
-```
-
-Main outputs:
-
-- `submissions/v6/submission_v6.csv`
-- `submissions/v6/v6_primary.csv`
-- `submissions/v6/v6_conservative_low_seed.csv`
-- `submissions/v6/v6_aggressive_ridge.csv`
-- `submissions/v6/v6_lgbm_low_seed.csv`
-- `submissions/v6/v6_candidate_summary.csv`
-
-## 14) Recommended Competition Submission Paths
-
-### Current best competition-facing choice
-
-- `submissions/v3_ensemble/submission_v3_ensemble.csv`
-
-Reason:
-
-- this is still the best verified public-leaderboard file in the repository
-- v6 is a hedge layer designed to test a few targeted changes, not a proven replacement yet
-
-### Best new hedge candidate
-
-- `submissions/v6/submission_v6.csv`
-
-Reason:
-
-- only changes two rows from `v3_ensemble`
-- those rows are supported by multiple local models
-- this is the cleanest serious attempt to improve on the current best public score without discarding the winning baseline structure
-
-### Best v5 research artifacts
-
-Best mean offline metric:
-
-- `submissions/v5_experiments/v5_base_core/lightgbm/submission.csv`
-
-Most stable v5 ridge variant:
-
-- `submissions/v5_experiments/v5_base_full/ridge/submission.csv`
-
-Implemented but not recommended:
-
-- `submissions/v5_ensemble/submission.csv`
-
-Historical clean fallback candidates:
-
-- `submissions/v6/v6_conservative_low_seed.csv`
-- `submissions/v6/v6_aggressive_ridge.csv`
-- `submissions/v6/v6_lgbm_low_seed.csv`
-- `submissions/v3_ensemble/submission_v3_ensemble.csv`
-- `submissions/v3_no_external/submission_v3_no_external.csv`
-- `submissions/no_external_best/submission_no_leak_v2.csv`
-
-## 15) Next Steps for V7
-
-Priority directions:
-
-- compute season-relative features against the full season pool, then train only on seeded rows
-- replace simple rank blending with a fold-safe meta-model trained on OOF base predictions
-- tune post-processing directly around season-consistent seed assignment, not only regression loss
-- prune or regularize target encodings for tree models, since the full-stack tree variants clearly overfit
-- test monotonic or pairwise ranking objectives rather than plain RMSE regressors
-
-## 16) FAQ
-
-### Is `build_submission_v3_ensemble.py` using internet data?
-
-No. It only reads local files and, if missing, runs local scripts that also read only `data/raw/*`.
-
-### Is v5 using `goto_conversion` or any market conversion package?
-
-No. Those methods were reviewed and intentionally skipped because the repository has no odds-like inputs.
-
-### Why keep `legacy` if it is not submission-safe?
-
-For audit trail and reproducibility history.
-
-### Why do the complex v5 tree models get worse?
-
-Because the seeded-label sample is small, and the richer feature stack plus encodings overfit more easily than the linear ridge baseline.
-
-## 17) Private 2026 Final Pipeline
-
-This repository now also contains a private-task-specific final pipeline for the `2025-26` season snapshot dated `2026-03-15`.
-
-Primary entry point:
-
-- `code/build_submission_v7_private.py`
-
-Supporting modules:
-
-- `code/private_features.py`
-- `code/private_validation.py`
-
-### What changed from Kaggle-era versions
-
-The private v7 flow intentionally drops the old competition assumptions:
-
-- does not use `Bid Type` in modeling or post-processing
-- does not use the historical Kaggle test file for fitting
-- does not assume the test file already identifies selected teams
-- does not assign only season-residual seeds from prior years
-- writes one final `365`-row submission for the `2026-03-15` snapshot
-
-### Final modeling approach
-
-The private final task is treated as a constrained ranking problem:
-
-1. Train only on official train rows with known `Overall Seed`.
-2. Predict a continuous seed-strength score from committee-style resume features.
-3. Score all `365` teams in the final `2026-03-15` snapshot.
-4. Select the top `68` teams by model score.
-5. Assign exact unique overall seeds `1..68`.
-6. Assign `0` to all remaining teams.
-
-### New feature design
-
-The private feature stack includes:
-
-- strict parsing of all record-style fields into wins, losses, games, percentages, and margins
-- committee-style resume features such as `q12_wins`, `q34_losses`, `quality_win_score`, `bad_loss_penalty`, and `resume_balance`
-- NET movement features derived from `PrevNET` and current `NET Rank`
-- SOS context and interaction features
-- season-relative percentile and z-score features
-- conference-context features after normalizing `American` / `The American`
-- fold-safe clipping and missing-value indicators
-
-Raw `Team` identity and `Bid Type` are excluded from the final private model.
-
-### Validation framework
-
-The private final pipeline uses:
-
-- expanding-window folds:
-  - `2020-21..2021-22 -> 2022-23`
-  - `2020-21..2022-23 -> 2023-24`
-  - `2020-21..2023-24 -> 2024-25`
-- weighted fold emphasis on recency: `0.2 / 0.3 / 0.5`
-- 2026 weekly stability checks across all provided `2026` snapshots
-
-Candidate models tested in v7:
-
-- `ridge_only_context`
-- `catboost_only_context`
-- `ensemble_base`
-- `ensemble_context`
-- `ensemble_context_band`
-- `ensemble_context_lgbm`
-- `ensemble_context_pu`
-
-### Chosen final candidate
-
-The selected final candidate from the private v7 run is:
-
-- `ridge_only_context`
-
-Why it won:
-
-- best weighted composite loss on the expanding-window backtests
-- strongest recent-fold recall among the top candidates
-- weekly 2026 stability that was competitive with the more complex variants
-- lower implementation risk than the ensemble variants
-
-### Final private artifacts
-
-Diagnostics:
-
-- `artifacts/final_20260315/rolling_origin_metrics.csv`
-- `artifacts/final_20260315/weekly_stability_metrics.csv`
-- `artifacts/final_20260315/model_comparison.json`
-- `artifacts/final_20260315/feature_importance.csv`
-- `artifacts/final_20260315/final_selection_audit.csv`
-
-Final submission:
+Final competition submission file:
 
 - `submissions/final/submission_2026_20260315.csv`
 
-The final submission file satisfies these checks:
+Final production code:
 
-- exactly `365` rows
-- columns exactly `RecordID,Overall Seed`
-- exactly `68` non-zero predictions
-- non-zero seeds are exactly the integers `1..68`
-- remaining `297` teams are assigned `0`
+- `code/build_submission_v8_final.py`
+- `code/private_features.py`
+- `code/build_historical_true_seeds.py`
+
+Colab-ready notebook for rerunning the full pipeline:
+
+- `kaggle/final_private_2026_v8_colab.ipynb`
+
+Main evaluation artifacts:
+
+- `artifacts/final_20260315_eval/candidate_summary_v8.csv`
+- `artifacts/final_20260315_eval/rolling_origin_metrics_v8.csv`
+- `artifacts/final_20260315_eval/leave_one_season_out_metrics_v8.csv`
+- `artifacts/final_20260315_eval/weekly_stability_metrics_v8.csv`
+- `artifacts/final_20260315_eval/final_selection_audit_v8.csv`
+- `artifacts/final_20260315_eval/feature_importance_v8.csv`
+- `artifacts/final_20260315_eval/model_comparison_v8.json`
+
+## 2) Final Executive Summary
+
+The final model predicts the `2025-26` NCAA men’s tournament field and seed order from the `2026-03-15` snapshot using a historically validated, leakage-aware pipeline.
+
+Final production setup:
+
+- historical training universe: `2020-21` through `2024-25`
+- target labels: historical true seeds plus historical `AQ / AL / NONE`
+- final inference snapshot: `data/raw/NCAA_Seed_Test_Set_2026_20260315.csv`
+- final field rule: exactly `68` selected teams
+- bid composition rule: exactly `31 AQ` and `37 AL`
+- output rule: selected teams receive unique seeds `1..68`, all others receive `0`
+
+Final selected model:
+
+- candidate: `exp3_logit_bid_ridge_seed`
+- bid-class model: `LogisticRegression`
+- seed-strength model: `RidgeCV`
+
+Why this model was shipped:
+
+- best weighted rolling-origin full RMSE after the final conservative AQ/AL pass
+- best weighted MAE among active candidates
+- best weighted inclusion F1 among active candidates
+- much simpler than the boosted and ensemble alternatives
+- more stable after the quota-handling fix than the earlier quota-heavy selection logic
+
+Final weighted validation summary from `candidate_summary_v8.csv`:
+
+| Candidate | Bid Model | Seed Model | Weighted Full RMSE | Weighted Full MAE | Weighted Inclusion F1 | RMSE Std |
+|---|---|---|---:|---:|---:|---:|
+| `exp3_logit_bid_ridge_seed` | `LogisticRegression` | `RidgeCV` | `17.0347` | `5.6208` | `0.7706` | `0.3336` |
+| `exp4_lgbm_bid_ridge_seed_cfa` | `LightGBMClassifier` | `RidgeCV + CFA` | `17.0422` | `5.6858` | `0.7691` | `0.6102` |
+| `exp5_lgbm_bid_seed_ensemble` | `LightGBMClassifier` | `RidgeCV + LightGBMRegressor` | `17.2655` | `5.6539` | `0.7691` | `0.7479` |
+
+Final submission checks:
+
+- rows: `365`
+- columns: `RecordID,Overall Seed`
+- nonzero predictions: `68`
+- nonzero seed set: exactly `1..68`
+- zeros: `297`
+
+## 3) What Actually Happened
+
+The final production path was not a straight line from the earlier Kaggle versions.
+
+The final sequence was:
+
+1. Earlier repository versions (`v1` to `v6`) were built around Kaggle-style evaluation and partial-label assumptions.
+2. `v7` moved the project into a private-prediction setting and removed dependence on test-time `Bid Type`.
+3. `v8` upgraded the project from censored labels to a fully labeled historical universe by attaching true seeds for all historical selected teams from `2020-21` through `2024-25`.
+4. The final model family evaluated inclusion and seed ordering separately.
+5. The first AQ/AL quota implementation was too aggressive and distorted the top seed lines.
+6. The final correction locked the top `24` teams by overall score first and applied the `AQ / AL` quota mainly in the back half of the field.
+7. After that conservative pass, `exp3_logit_bid_ridge_seed` became the final winner.
+
+This matters because the final README should reflect the actual shipped logic, not the intermediate model that won under an earlier post-processing rule.
+
+## 4) Data Used in the Final Pipeline
+
+### Historical training and labeling inputs
+
+These files were used to build the historical labeled universe:
+
+- `data/raw/NCAA_Seed_Training_Set2.0.csv`
+- `data/raw/NCAA_Seed_Test_Set2.0.csv`
+- `data/external/historical_true_seeds_2021_2025.csv`
+
+How they are used:
+
+- `NCAA_Seed_Training_Set2.0.csv` provides official historical feature rows.
+- `NCAA_Seed_Test_Set2.0.csv` is merged back by season to reconstruct the full historical team universe.
+- `historical_true_seeds_2021_2025.csv` supplies the true overall seed labels for selected historical teams and allows `AQ / AL / NONE` labels to be reconstructed cleanly.
+
+### Weekly 2026 diagnostics only
+
+These files were not used as training rows and were not pooled into the final inference row. They were used only for stability checks.
+
+- `data/raw/NCAA_Seed_Test_Set_2026_20260206.csv`
+- `data/raw/NCAA_Seed_Test_Set_2026_20260208.csv`
+- `data/raw/NCAA_Seed_Test_Set_2026_20260215.csv`
+- `data/raw/NCAA_Seed_Test_Set_2026_20260222.csv`
+- `data/raw/NCAA_Seed_Test_Set_2026_20260301.csv`
+- `data/raw/NCAA_Seed_Test_Set_2026_20260308.csv`
+
+### Final inference input
+
+Only this snapshot is used for the final competition prediction:
+
+- `data/raw/NCAA_Seed_Test_Set_2026_20260315.csv`
+
+### Output file used for competition submission
+
+- `submissions/final/submission_2026_20260315.csv`
+
+## 5) Leakage Policy
+
+The final `v8` pipeline is built around explicit leakage constraints.
+
+Rules enforced in the shipped path:
+
+- no use of `Bid Type` as a known feature for the `2025-26` final test snapshot
+- no use of tournament results, bracket outcomes, or post-selection information as predictors
+- no random CV mixing seasons for final model selection
+- no use of later weekly `2026` snapshots to help earlier predictions
+- no use of the old Kaggle template row IDs as the final inference authority
+- no fitting of scalers, clipping rules, encoders, or fusion weights on holdout seasons
+- no raw `Team` identity in the final production model
+
+Important nuance:
+
+- historical `Bid Type` is used only as a historical label target for `AQ / AL / NONE`
+- it is not treated as known information for the `2026-03-15` snapshot
+
+## 6) Final Pipeline Overview
+
+### High-level flow
+
+```mermaid
+flowchart TD
+    A[Historical Team Metrics 2020-21 to 2024-25] --> B[Attach Historical True Seeds and Historical AQ/AL Labels]
+    B --> C[Feature Engineering]
+    C --> D[Bid-Class Model: LogisticRegression]
+    C --> E[Seed-Strength Model: RidgeCV]
+    D --> F[Predicted AQ, AL, NONE Probabilities]
+    E --> G[Seed Strength Score]
+    F --> H[Combined Final Score]
+    G --> H
+    H --> I[Conservative AQ/AL Post-Processing]
+    I --> J[Select Final 68 Teams]
+    J --> K[Assign Unique Seeds 1 to 68]
+    K --> L[Write Final Submission CSV]
+```
+
+### Production flow with data boundaries
+
+```mermaid
+flowchart LR
+    subgraph HistoricalData[Historical supervised universe]
+        T1[Training_Set2.0]
+        T2[Historical Test_Set2.0]
+        T3[historical_true_seeds_2021_2025.csv]
+    end
+
+    subgraph Diagnostics[Diagnostics only]
+        W1[2026-02-06 to 2026-03-08 weekly snapshots]
+    end
+
+    subgraph FinalInference[Final inference only]
+        F1[2026-03-15 snapshot]
+    end
+
+    T1 --> M[Build labeled historical universe]
+    T2 --> M
+    T3 --> M
+    M --> V[Rolling-origin validation and model selection]
+    V --> R[Refit chosen model on all historical seasons]
+    R --> P[Predict 2026-03-15 only]
+    W1 --> S[Stability checks]
+    S --> V
+    P --> Q[Quota-aware field selection and seed assignment]
+    Q --> O[submission_2026_20260315.csv]
+```
+
+### Final AQ/AL post-processing logic
+
+```mermaid
+flowchart TD
+    A[Score all 365 teams] --> B[Rank by final combined score]
+    B --> C[Lock top 24 teams by overall score]
+    C --> D[Assign provisional AQ/AL labels from bid-class probabilities]
+    D --> E[Apply AQ/AL quota mainly to the remaining field]
+    E --> F[Reach exactly 31 AQ and 37 AL]
+    F --> G[Sort final 68 by final score]
+    G --> H[Assign seeds 1 to 68]
+    H --> I[Assign 0 to remaining 297 teams]
+```
+
+This final post-processing rule is the key production correction that made the field more realistic. It keeps the top seed lines driven by overall team strength rather than forcing too many auto-bids into the top of the bracket.
+
+## 7) Final Feature Engineering
+
+The final model uses committee-style résumé features derived only from information available before bracket selection.
+
+### Record parsing
+
+The following string columns are parsed into wins, losses, games, win rate, loss rate, and margin features:
+
+- `WL`
+- `Conf.Record`
+- `Non-ConferenceRecord`
+- `RoadWL`
+- `Quadrant1`
+- `Quadrant2`
+- `Quadrant3`
+- `Quadrant4`
+
+The parser explicitly repairs spreadsheet-converted artifacts such as `8-Sep`, `Apr-00`, and `Jun-00`.
+
+### Core résumé features
+
+The final pipeline builds features such as:
+
+- overall win rate
+- conference win rate
+- non-conference win rate
+- road win rate
+- quadrant-specific win rates
+- `Q1` wins
+- `Q1 + Q2` wins
+- `Q3 + Q4` loss counts
+- bad loss rates
+- quality win score
+- bad loss penalty
+- résumé balance
+- résumé efficiency
+- top résumé index
+
+### Ranking and movement features
+
+The model also uses:
+
+- `NET Rank`
+- `PrevNET`
+- `NET delta = PrevNET - NET Rank`
+- absolute NET movement
+- NET improvement / worsening flags
+- inverse and log transforms of rank-style columns
+
+### Schedule and committee-context features
+
+Additional context features include:
+
+- `NETSOS`
+- `NETNonConfSOS`
+- `SOS gap`
+- road-quality and non-conference quality interactions
+- season-relative percentiles and z-scores
+- conference context means and team-minus-conference deltas
+- threshold features for `NET <= 10`, `16`, `25`, `45`, `50`, `75`
+
+Final implementation:
+
+- `code/private_features.py`
+
+## 8) Final Model Components
+
+### Bid-class model
+
+Model used:
+
+- `LogisticRegression`
+
+Target:
+
+- `NONE`
+- `AQ`
+- `AL`
+
+Purpose:
+
+- estimate whether a team is likely out of the field, an automatic qualifier, or an at-large team
+- produce `P_AQ` and `P_AL`
+- provide an inclusion signal through `P_AQ + P_AL`
+
+### Seed-strength model
+
+Model used:
+
+- `RidgeCV`
+
+Target:
+
+- seed strength derived from historical selected teams
+
+Purpose:
+
+- rank likely tournament teams by overall seed strength in a stable, low-variance way
+
+### Final score combination
+
+The final rank score combines:
+
+- normalized seed-strength score
+- normalized inclusion signal
+
+The exact selected field is then created through conservative quota-aware post-processing.
+
+## 9) Validation Framework
+
+The final production model was chosen using temporally realistic validation.
+
+### Primary historical validation
+
+Rolling-origin folds:
+
+- `2020-21 + 2021-22 -> 2022-23`
+- `2020-21 + 2021-22 + 2022-23 -> 2023-24`
+- `2020-21 + 2021-22 + 2022-23 + 2023-24 -> 2024-25`
+
+Fold weights:
+
+- `0.2`
+- `0.3`
+- `0.5`
+
+Main metrics tracked:
+
+- full RMSE on overall seed with non-selected teams predicted as `0`
+- full MAE
+- selected-only RMSE
+- tournament inclusion precision, recall, F1
+- bucket accuracy
+- selected-team Spearman rank correlation
+- training time
+
+### Secondary validation
+
+Leave-one-season-out validation was run on the shortlist after the rolling-origin screen.
+
+### 2026 stability diagnostics
+
+The final shortlist was scored on every weekly `2026` snapshot without refitting.
+
+Stability metrics:
+
+- top-68 Jaccard overlap
+- top-16 overlap
+- mean seed movement within the top 80
+
+These diagnostics were used as a tie-break, not as a replacement for historical validation.
+
+## 10) Final Candidate Comparison
+
+Final shortlisted candidates:
+
+| Candidate | Description | Weighted Full RMSE | Weighted Full MAE | Inclusion F1 | RMSE Std | Mean Train Seconds |
+|---|---|---:|---:|---:|---:|---:|
+| `exp3_logit_bid_ridge_seed` | `LogisticRegression + RidgeCV` | `17.0347` | `5.6208` | `0.7706` | `0.3336` | `0.0710` |
+| `exp4_lgbm_bid_ridge_seed_cfa` | `LightGBMClassifier + RidgeCV + rank fusion` | `17.0422` | `5.6858` | `0.7691` | `0.6102` | `3.0842` |
+| `exp5_lgbm_bid_seed_ensemble` | `LightGBMClassifier + RidgeCV + LightGBMRegressor` | `17.2655` | `5.6539` | `0.7691` | `0.7479` | `4.0621` |
+
+Weekly stability summary for the near-best candidates:
+
+| Candidate | Top68 Jaccard | Top16 Overlap | Top80 Mean Seed Movement |
+|---|---:|---:|---:|
+| `exp3_logit_bid_ridge_seed` | `0.8282` | `0.8671` | `8.6896` |
+| `exp4_lgbm_bid_ridge_seed_cfa` | `0.8866` | `0.8497` | `8.0533` |
+
+Reason the final model remained `exp3`:
+
+- it finished with the best weighted rolling RMSE after the quota fix
+- it also had the best weighted MAE
+- it had the strongest inclusion F1
+- it had the lowest season-to-season RMSE variance by a clear margin
+- it was the simplest and fastest model in the shortlist
+
+## 11) Final 2026 Field Snapshot
+
+Current top `12` predicted seeds from the final audit:
+
+| Seed | Team | Predicted Bid Type |
+|---:|---|---|
+| 1 | Michigan | AL |
+| 2 | Duke | AL |
+| 3 | Arizona | AQ |
+| 4 | Houston | AQ |
+| 5 | Florida | AL |
+| 6 | Virginia | AQ |
+| 7 | Illinois | AL |
+| 8 | Iowa St. | AL |
+| 9 | Purdue | AL |
+| 10 | Michigan St. | AL |
+| 11 | Louisville | AL |
+| 12 | Vanderbilt | AL |
+
+Last `8` teams in the projected field:
+
+| Seed | Team | Predicted Bid Type |
+|---:|---|---|
+| 61 | LSU | AL |
+| 62 | New Mexico | AL |
+| 63 | Notre Dame | AL |
+| 64 | Miami (OH) | AQ |
+| 65 | Marquette | AQ |
+| 66 | Tulsa | AQ |
+| 67 | SFA | AQ |
+| 68 | McNeese | AQ |
+
+Source:
+
+- `artifacts/final_20260315_eval/final_selection_audit_v8.csv`
+
+## 12) How to Reproduce the Final Submission
+
+### Local command-line run
+
+```bash
+python3 code/build_submission_v8_final.py --skip-seed-build
+```
+
+This writes:
+
+- `submissions/final/submission_2026_20260315.csv`
+- all main evaluation artifacts under `artifacts/final_20260315_eval/`
+
+### Colab notebook run
+
+Use:
+
+- `kaggle/final_private_2026_v8_colab.ipynb`
+
+The notebook includes:
+
+- package install
+- file checks and optional uploads
+- historical true-seed build fallback
+- rolling-origin validation
+- shortlist selection
+- final retraining and final CSV export
+
+## 13) Repository Structure Relevant to the Final Pipeline
+
+```text
+final-four-analytics-challenge-26/
+├── README.md
+├── requirements.txt
+├── code/
+│   ├── build_historical_true_seeds.py
+│   ├── build_submission_v7_private.py
+│   ├── build_submission_v8_final.py
+│   ├── build_submission_v8_kaggle_backtest.py
+│   ├── private_features.py
+│   └── private_validation.py
+├── data/
+│   ├── raw/
+│   │   ├── NCAA_Seed_Training_Set2.0.csv
+│   │   ├── NCAA_Seed_Test_Set2.0.csv
+│   │   ├── NCAA_Seed_Test_Set_2026_20260206.csv
+│   │   ├── NCAA_Seed_Test_Set_2026_20260208.csv
+│   │   ├── NCAA_Seed_Test_Set_2026_20260215.csv
+│   │   ├── NCAA_Seed_Test_Set_2026_20260222.csv
+│   │   ├── NCAA_Seed_Test_Set_2026_20260301.csv
+│   │   ├── NCAA_Seed_Test_Set_2026_20260308.csv
+│   │   └── NCAA_Seed_Test_Set_2026_20260315.csv
+│   └── external/
+│       └── historical_true_seeds_2021_2025.csv
+├── artifacts/
+│   ├── final_20260315_eval/
+│   └── kaggle_backtest_v8/
+├── kaggle/
+│   └── final_private_2026_v8_colab.ipynb
+└── submissions/
+    ├── final/
+    │   └── submission_2026_20260315.csv
+    └── kaggle_backtest/
+        └── submission_kaggle_v8_exp3_loocv.csv
+```
+
+## 14) Historical Kaggle Backtest Using the Final Model Family
+
+A leakage-aware historical Kaggle-format backtest was also created using the same `v8` family.
+
+Files:
+
+- `code/build_submission_v8_kaggle_backtest.py`
+- `submissions/kaggle_backtest/submission_kaggle_v8_exp3_loocv.csv`
+- `artifacts/kaggle_backtest_v8/kaggle_loyo_full_universe_metrics.csv`
+- `artifacts/kaggle_backtest_v8/kaggle_test_predictions_with_truth.csv`
+
+Important note:
+
+- this is an out-of-season backtest artifact
+- it is not the production `2025-26` competition submission
+- it was generated specifically to avoid scoring the historical Kaggle test rows in-sample
+
+## 15) Research and Strategy Review
+
+This project reviewed several modeling ideas before the final `v8` choice.
+
+### Strategies retained
+
+- committee-style résumé feature engineering
+- temporally realistic validation
+- simple linear and regularized models for stability
+- explicit separation of bid-class prediction and seed-strength ranking
+- conservative post-processing to produce a realistic final field
+
+### Strategies tested but not shipped
+
+- `LightGBMClassifier` inclusion model
+- `LightGBMRegressor` seed model
+- `CatBoostRegressor` seed model
+- CFA-style weighted reciprocal-rank fusion
+- seed ensembles
+
+### Strategies explicitly rejected
+
+- test-time `Bid Type` as a known feature for `2025-26`
+- random cross-validation for final model choice
+- deep stacking
+- TabNet as a production path
+- Transformers
+- LSTMs on weekly data
+- public-leaderboard hedging logic
+
+Why deep models were not adopted:
+
+- the historical sample size is small for deep tabular learning
+- the training target is noisy and highly structured by committee behavior
+- tree and linear baselines remained more stable and easier to validate
+
+## 16) Iterative Development History
+
+The repository includes earlier versions because they were part of the path that led to `v8`.
+
+### Version summary
+
+| Version | Core Idea | Main Model Family | Main Weakness | Current Status |
+|---|---|---|---|---|
+| `v1` | early seed-selection baseline | `XGBoost` classifier + regressor | censored labels, Kaggle framing | archive |
+| `v2` | cleaner leakage-safe baseline | `XGBoost` classifier + regressor | still depends on partial-label assumptions | archive |
+| `v3` | richer features and constrained season assignment | `XGBoost` family | relied on `Bid Type` hints in the Kaggle setting | archive |
+| `v4` | seeded-team ranking approach | `Ridge + tree models` | assumes selected rows are already known | archive |
+| `v5` | modular experiment framework | linear + boosting families | mixed success, no final private path | research archive |
+| `v6` | leaderboard hedge around earlier Kaggle winner | blended heuristic | not a private forecasting pipeline | archive |
+| `v7` | first private pipeline | `Ridge + private validation` | trained from censored labels only | replaced by `v8` |
+| `v8` | full historical-label upgrade | `LogisticRegression + RidgeCV` | still limited by bubble-team uncertainty | final production path |
+
+### Why the older work is still documented
+
+The older sections remain useful because they explain:
+
+- which feature ideas helped or failed
+- why `Bid Type` had to be reinterpreted in the private setting
+- why some stronger-looking Kaggle artifacts are not valid final choices for `2025-26`
+- how the project moved from leaderboard-oriented iteration to one-shot private forecasting
+
+## 17) Earlier Competition-Facing Artifacts and Archives
+
+Earlier competition-era folders are preserved for traceability.
+
+Main archive folders:
+
+- `submissions/generated/`
+- `submissions/legacy/`
+- `submissions/no_external_best/`
+- `submissions/v3_no_external/`
+- `submissions/v3_ensemble/`
+- `submissions/v4_selected_seed/`
+- `submissions/v5_experiments/`
+- `submissions/v5_ensemble/`
+- `submissions/v6/`
+
+How to interpret them now:
+
+- they are part of the project history
+- they are not the final private `2025-26` production submission
+- they should not override the `v8` path documented above
+
+## 18) Final Recommendation
+
+If you only need the production assets, use these four files:
+
+- final submission: `submissions/final/submission_2026_20260315.csv`
+- final driver: `code/build_submission_v8_final.py`
+- final feature pipeline: `code/private_features.py`
+- Colab notebook: `kaggle/final_private_2026_v8_colab.ipynb`
+
+Everything else in the repository is supporting context, validation evidence, or historical development history.

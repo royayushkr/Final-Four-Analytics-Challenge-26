@@ -1,0 +1,341 @@
+Season,TeamSource,TeamCanonical,TrueSeed,IsSelected,SourceUrl,SourceType,Verified
+2020-21,Gonzaga,Gonzaga,1,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Baylor,Baylor,2,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Illinois,Illinois,3,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Michigan,Michigan,4,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Alabama,Alabama,5,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Ohio State,Ohio St.,6,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Iowa,Iowa,7,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Houston,Houston,8,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Arkansas,Arkansas,9,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,West Virginia,West Virginia,10,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Texas,Texas,11,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Kansas,Kansas,12,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Florida State,Florida St.,13,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Purdue,Purdue,14,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Oklahoma State,Oklahoma St.,15,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Virginia,Virginia,16,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Creighton,Creighton,17,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Villanova,Villanova,18,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Tennessee,Tennessee,19,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Colorado,Colorado,20,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,USC,Southern California,21,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Texas Tech,Texas Tech,22,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,BYU,BYU,23,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,San Diego State,San Diego St.,24,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Oregon,Oregon,25,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,UConn,UConn,26,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Clemson,Clemson,27,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Florida,Florida,28,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,LSU,LSU,29,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Loyola Chicago,Loyola Chicago,30,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,North Carolina,North Carolina,31,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Oklahoma,Oklahoma,32,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Missouri,Missouri,33,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Georgia Tech,Georgia Tech,34,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Wisconsin,Wisconsin,35,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Maryland,Maryland,36,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Virginia Tech,Virginia Tech,37,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,VCU,VCU,38,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,St. Bonaventure,St. Bonaventure,39,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Rutgers,Rutgers,40,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Syracuse,Syracuse,41,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Utah State,Utah St.,42,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Michigan State,Michigan St.,43,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,UCLA,UCLA,44,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Wichita State,Wichita St.,45,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Oregon State,Oregon St.,46,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Georgetown,Georgetown,47,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Drake,Drake,48,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Winthrop,Winthrop,49,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,UC Santa Barbara,UC Santa Barbara,50,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Ohio,Ohio,51,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,North Texas,North Texas,52,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Liberty,Liberty,53,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,UNC Greensboro,UNC Greensboro,54,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Abilene Christian,Abilene Christian,55,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Morehead State,Morehead St.,56,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Colgate,Colgate,57,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Eastern Washington,Eastern Wash.,58,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Grand Canyon,Grand Canyon,59,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Cleveland State,Cleveland St.,60,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Oral Roberts,Oral Roberts,61,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Iona,Iona,62,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Drexel,Drexel,63,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Hartford,Hartford,64,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Mount St. Mary's,Mount St. Mary's,65,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Texas Southern,Texas Southern,66,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Norfolk State,Norfolk St.,67,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2020-21,Appalachian State,App State,68,1,https://www.cbssports.com/college-basketball/news/2021-ncaa-tournament-bracket-seed-list-from-1-68-march-madness-printable-bracket-key-dates-times/,cbssports_manual_fallback,True
+2021-22,Gonzaga,Gonzaga,1,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Arizona,Arizona,2,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Kansas,Kansas,3,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Baylor,Baylor,4,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Auburn,Auburn,5,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Kentucky,Kentucky,6,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Villanova,Villanova,7,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Duke,Duke,8,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Wisconsin,Wisconsin,9,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Tennessee,Tennessee,10,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Purdue,Purdue,11,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Texas Tech,Texas Tech,12,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,UCLA,UCLA,13,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Illinois,Illinois,14,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Providence,Providence,15,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Arkansas,Arkansas,16,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,UConn,UConn,17,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Houston,Houston,18,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Saint Mary's,Saint Mary's (CA),19,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Iowa,Iowa,20,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Alabama,Alabama,21,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,LSU,LSU,22,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Texas,Texas,23,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Colorado State,Colorado St.,24,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,USC,Southern California,25,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Murray State,Murray St.,26,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Michigan State,Michigan St.,27,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Ohio State,Ohio St.,28,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Boise State,Boise St.,29,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,North Carolina,North Carolina,30,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,San Diego State,San Diego St.,31,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Seton Hall,Seton Hall,32,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Creighton,Creighton,33,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,TCU,TCU,34,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Marquette,Marquette,35,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Memphis,Memphis,36,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,San Francisco,San Francisco,37,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Miami,Miami (FL),38,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Loyola Chicago,Loyola Chicago,39,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Davidson,Davidson,40,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Iowa State,Iowa St.,41,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Michigan,Michigan,42,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Wyoming,Wyoming,43,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Rutgers,Rutgers,44,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Indiana,Indiana,45,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Virginia Tech,Virginia Tech,46,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Notre Dame,Notre Dame,47,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,UAB,UAB,48,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Richmond,Richmond,49,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,New Mexico State,New Mexico St.,50,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Chattanooga,Chattanooga,51,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,South Dakota State,South Dakota St.,52,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Vermont,Vermont,53,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Akron,Akron,54,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Longwood,Longwood,55,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Yale,Yale,56,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Colgate,Colgate,57,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Montana State,Montana St.,58,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Delaware,Delaware,59,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Saint Peter's,Saint Peter's,60,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Jacksonville State,Jacksonville St.,61,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Cal State Fullerton,Cal St. Fullerton,62,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Georgia State,Georgia St.,63,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Norfolk State,Norfolk St.,64,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Wright State,Wright St.,65,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Bryant,Bryant,66,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Texas Southern,Texas Southern,67,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2021-22,Texas A&M-Corpus Christi,A&M-Corpus Christi,68,1,https://www.cbssports.com/college-basketball/news/march-madness-2022-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Alabama,Alabama,1,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Houston,Houston,2,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Kansas,Kansas,3,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Purdue,Purdue,4,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,UCLA,UCLA,5,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Texas,Texas,6,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Arizona,Arizona,7,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Marquette,Marquette,8,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Baylor,Baylor,9,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Gonzaga,Gonzaga,10,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Kansas St.,Kansas St.,11,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Xavier,Xavier,12,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,UConn,UConn,13,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Tennessee,Tennessee,14,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Indiana,Indiana,15,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Virginia,Virginia,16,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,San Diego St.,San Diego St.,17,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Duke,Duke,18,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Saint Mary's (CA),Saint Mary's (CA),19,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Miami (FL),Miami (FL),20,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Iowa St.,Iowa St.,21,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Creighton,Creighton,22,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Kentucky,Kentucky,23,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,TCU,TCU,24,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Texas A&M,Texas A&M,25,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Michigan St.,Michigan St.,26,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Missouri,Missouri,27,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Northwestern,Northwestern,28,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Memphis,Memphis,29,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Arkansas,Arkansas,30,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Maryland,Maryland,31,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Iowa,Iowa,32,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Fla. Atlantic,Fla. Atlantic,33,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,West Virginia,West Virginia,34,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Auburn,Auburn,35,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Illinois,Illinois,36,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Boise St.,Boise St.,37,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Penn St.,Penn St.,38,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Southern California,Southern California,39,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Utah St.,Utah St.,40,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,NC State,NC State,41,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Providence,Providence,42,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Mississippi St.,Mississippi St.,43,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Pittsburgh,Pittsburgh,44,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Arizona St.,Arizona St.,45,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Nevada,Nevada,46,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Col. of Charleston,Col. of Charleston,47,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Oral Roberts,Oral Roberts,48,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Drake,Drake,49,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,VCU,VCU,50,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Kent St.,Kent St.,51,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Iona,Iona,52,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Furman,Furman,53,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Louisiana,Louisiana,54,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Kennesaw St.,Kennesaw St.,55,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,UC Santa Barbara,UC Santa Barbara,56,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Grand Canyon,Grand Canyon,57,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Montana St.,Montana St.,58,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Vermont,Vermont,59,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Colgate,Colgate,60,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Princeton,Princeton,61,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,UNC Asheville,UNC Asheville,62,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Northern Ky.,Northern Ky.,63,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Howard,Howard,64,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,A&M-Corpus Christi,A&M-Corpus Christi,65,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Texas Southern,Texas Southern,66,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,Southeast Mo. St.,Southeast Mo. St.,67,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2022-23,FDU,FDU,68,1,https://www.cbssports.com/college-basketball/news/march-madness-2023-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Connecticut,UConn,1,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Houston,Houston,2,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Purdue,Purdue,3,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,North Carolina,North Carolina,4,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Tennessee,Tennessee,5,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Arizona,Arizona,6,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Marquette,Marquette,7,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Iowa State,Iowa St.,8,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Baylor,Baylor,9,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Creighton,Creighton,10,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Kentucky,Kentucky,11,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Illinois,Illinois,12,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Duke,Duke,13,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Kansas,Kansas,14,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Auburn,Auburn,15,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Alabama,Alabama,16,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,BYU,BYU,17,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,San Diego State,San Diego St.,18,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Wisconsin,Wisconsin,19,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Saint Mary's (CA),Saint Mary's (CA),20,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Gonzaga,Gonzaga,21,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Clemson,Clemson,22,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Texas Tech,Texas Tech,23,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,South Carolina,South Carolina,24,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Florida,Florida,25,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Washington State,Washington St.,26,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Texas,Texas,27,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Dayton,Dayton,28,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Nebraska,Nebraska,29,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Utah State,Utah St.,30,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Florida Atlantic,Fla. Atlantic,31,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Mississippi State,Mississippi St.,32,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Michigan State,Michigan St.,33,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Texas A&M,Texas A&M,34,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,TCU,TCU,35,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Northwestern,Northwestern,36,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Nevada,Nevada,37,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Boise State,Boise St.,38,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Colorado,Colorado,39,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Drake,Drake,40,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Virginia,Virginia,41,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,New Mexico,New Mexico,42,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Oregon,Oregon,43,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Colorado State,Colorado St.,44,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,N.C. State,N.C. State,45,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Duquesne,Duquesne,46,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Grand Canyon,Grand Canyon,47,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,James Madison,James Madison,48,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,McNeese State,McNeese,49,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,UAB,UAB,50,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Vermont,Vermont,51,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Yale,Yale,52,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Samford,Samford,53,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Charleston,Col. of Charleston,54,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Oakland,Oakland,55,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Akron,Akron,56,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Morehead State,Morehead St.,57,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Colgate,Colgate,58,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Long Beach State,Long Beach St.,59,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Western Kentucky,Western Ky.,60,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,South Dakota State,South Dakota St.,61,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Saint Peter's,Saint Peter's,62,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Longwood,Longwood,63,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Stetson,Stetson,64,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Montana State,Montana St.,65,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Grambling State,Grambling,66,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Howard,Howard,67,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2023-24,Wagner,Wagner,68,1,https://www.cbssports.com/college-basketball/news/march-madness-2024-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Auburn,Auburn,1,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Duke,Duke,2,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Houston,Houston,3,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Florida,Florida,4,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Tennessee,Tennessee,5,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Alabama,Alabama,6,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Michigan St.,Michigan St.,7,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,St. John's (NY),St. John's (NY),8,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Texas Tech,Texas Tech,9,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Iowa St.,Iowa St.,10,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Kentucky,Kentucky,11,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Wisconsin,Wisconsin,12,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Texas A&M,Texas A&M,13,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Purdue,Purdue,14,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Maryland,Maryland,15,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Arizona,Arizona,16,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Michigan,Michigan,17,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Clemson,Clemson,18,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Oregon,Oregon,19,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Memphis,Memphis,20,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,BYU,BYU,21,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Illinois,Illinois,22,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Missouri,Missouri,23,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Ole Miss,Ole Miss,24,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,UCLA,UCLA,25,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Marquette,Marquette,26,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Saint Mary's (CA),Saint Mary's (CA),27,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Kansas,Kansas,28,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Louisville,Louisville,29,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Gonzaga,Gonzaga,30,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,UConn,UConn,31,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Mississippi St.,Mississippi St.,32,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Creighton,Creighton,33,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Georgia,Georgia,34,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Baylor,Baylor,35,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Oklahoma,Oklahoma,36,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Arkansas,Arkansas,37,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,New Mexico,New Mexico,38,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Vanderbilt,Vanderbilt,39,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Utah St.,Utah St.,40,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Texas,Texas,41,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Xavier,Xavier,42,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,San Diego St.,San Diego St.,43,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Drake,Drake,44,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,VCU,VCU,45,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,North Carolina,North Carolina,46,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,UC San Diego,UC San Diego,47,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Colorado St.,Colorado St.,48,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,McNeese,McNeese,49,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Liberty,Liberty,50,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Yale,Yale,51,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,High Point,High Point,52,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Akron,Akron,53,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Grand Canyon,Grand Canyon,54,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Lipscomb,Lipscomb,55,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Troy,Troy,56,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,UNCW,UNCW,57,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Montana,Montana,58,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Robert Morris,Robert Morris,59,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Wofford,Wofford,60,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Omaha,Omaha,61,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Bryant,Bryant,62,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Norfolk St.,Norfolk St.,63,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,SIUE,SIUE,64,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,American,American,65,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Mount St. Mary's,Mount St. Mary's,66,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Alabama St.,Alabama St.,67,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True
+2024-25,Saint Francis,Saint Francis,68,1,https://www.cbssports.com/college-basketball/news/march-madness-2025-committee-reveals-official-ncaa-tournament-bracket-seed-list-from-1-68/,cbssports_article,True

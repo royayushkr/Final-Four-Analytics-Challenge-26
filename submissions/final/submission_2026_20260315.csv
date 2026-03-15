@@ -5,12 +5,12 @@ RecordID,Overall Seed
 2025-26-FGCU,0
 2025-26-Eastern Mich.,0
 2025-26-Florida,5
-2025-26-Tulsa,0
-2025-26-Louisville,10
+2025-26-Tulsa,66
+2025-26-Louisville,11
 2025-26-North Dakota,0
 2025-26-UTRGV,0
 2025-26-UAlbany,0
-2025-26-Baylor,43
+2025-26-Baylor,44
 2025-26-Montana,0
 2025-26-Eastern Wash.,0
 2025-26-Colorado St.,0
@@ -23,31 +23,31 @@ RecordID,Overall Seed
 2025-26-California Baptist,0
 2025-26-New Mexico,62
 2025-26-UC Irvine,0
-2025-26-Saint Mary's (CA),27
+2025-26-Saint Mary's (CA),31
 2025-26-Northeastern,0
 2025-26-Tulane,0
-2025-26-Iowa St.,6
-2025-26-Duke,4
+2025-26-Iowa St.,8
+2025-26-Duke,2
 2025-26-Rider,0
 2025-26-Elon,0
 2025-26-Cal St. Fullerton,0
 2025-26-NIU,0
-2025-26-Colorado,56
+2025-26-Colorado,0
 2025-26-San Jose St.,0
 2025-26-Penn St.,0
 2025-26-CSU Bakersfield,0
 2025-26-Maryland,0
-2025-26-Miami (OH),0
+2025-26-Miami (OH),64
 2025-26-Winthrop,0
-2025-26-Vanderbilt,11
+2025-26-Vanderbilt,12
 2025-26-Holy Cross,0
 2025-26-Rutgers,0
 2025-26-Lipscomb,0
-2025-26-California,58
+2025-26-California,60
 2025-26-Purdue,9
 2025-26-Kentucky,25
 2025-26-Duquesne,0
-2025-26-BYU,18
+2025-26-BYU,19
 2025-26-Marshall,0
 2025-26-Tennessee,21
 2025-26-Queens (NC),0
@@ -61,33 +61,33 @@ RecordID,Overall Seed
 2025-26-Bradley,0
 2025-26-Oakland,0
 2025-26-Central Conn. St.,0
-2025-26-Syracuse,63
+2025-26-Syracuse,51
 2025-26-UC Riverside,0
 2025-26-Florida St.,59
-2025-26-Southern California,61
+2025-26-Southern California,0
 2025-26-Howard,0
 2025-26-UMES,0
 2025-26-North Dakota St.,0
-2025-26-Washington,67
+2025-26-Washington,54
 2025-26-Fordham,0
 2025-26-LMU (CA),0
-2025-26-Saint Louis,53
+2025-26-Saint Louis,52
 2025-26-Chattanooga,0
-2025-26-VCU,44
+2025-26-VCU,49
 2025-26-Illinois St.,0
 2025-26-New Orleans,0
 2025-26-Northwestern,0
 2025-26-Temple,0
 2025-26-Manhattan,0
-2025-26-UConn,19
+2025-26-UConn,18
 2025-26-Davidson,0
-2025-26-UCF,39
+2025-26-UCF,41
 2025-26-Merrimack,0
 2025-26-Bellarmine,0
 2025-26-Stetson,0
-2025-26-Michigan,3
+2025-26-Michigan,1
 2025-26-Murray St.,0
-2025-26-Virginia,12
+2025-26-Virginia,6
 2025-26-UMass Lowell,0
 2025-26-Lindenwood,0
 2025-26-Mississippi Val.,0
@@ -101,12 +101,12 @@ RecordID,Overall Seed
 2025-26-Texas Tech,16
 2025-26-UTEP,0
 2025-26-Oregon St.,0
-2025-26-NC State,37
-2025-26-Iowa,31
+2025-26-NC State,36
+2025-26-Iowa,27
 2025-26-Green Bay,0
-2025-26-Alabama,24
+2025-26-Alabama,20
 2025-26-Texas St.,0
-2025-26-LSU,66
+2025-26-LSU,61
 2025-26-CSUN,0
 2025-26-Hampton,0
 2025-26-North Texas,0
@@ -115,11 +115,11 @@ RecordID,Overall Seed
 2025-26-N.C. Central,0
 2025-26-Air Force,0
 2025-26-Morgan St.,0
-2025-26-Cincinnati,50
+2025-26-Cincinnati,57
 2025-26-Tennessee St.,0
 2025-26-Quinnipiac,0
 2025-26-Little Rock,0
-2025-26-Wisconsin,23
+2025-26-Wisconsin,24
 2025-26-Long Beach St.,0
 2025-26-Minnesota,0
 2025-26-Samford,0
@@ -134,12 +134,12 @@ RecordID,Overall Seed
 2025-26-N.C. A&T,0
 2025-26-Northwestern St.,0
 2025-26-Prairie View,0
-2025-26-Seton Hall,64
+2025-26-Seton Hall,46
 2025-26-Indiana St.,0
 2025-26-San Diego,0
 2025-26-La Salle,0
 2025-26-Southeast Mo. St.,0
-2025-26-Texas A&M,38
+2025-26-Texas A&M,39
 2025-26-Purdue Fort Wayne,0
 2025-26-Detroit Mercy,0
 2025-26-New Mexico St.,0
@@ -154,8 +154,8 @@ RecordID,Overall Seed
 2025-26-Fairfield,0
 2025-26-Old Dominion,0
 2025-26-Drake,0
-2025-26-North Carolina,20
-2025-26-Houston,2
+2025-26-North Carolina,22
+2025-26-Houston,4
 2025-26-Western Caro.,0
 2025-26-Ohio,0
 2025-26-Rice,0
@@ -167,11 +167,11 @@ RecordID,Overall Seed
 2025-26-Wyoming,0
 2025-26-Vermont,0
 2025-26-Bethune-Cookman,0
-2025-26-Santa Clara,47
+2025-26-Santa Clara,53
 2025-26-Georgia Tech,0
 2025-26-Le Moyne,0
 2025-26-Charleston So.,0
-2025-26-Arizona,1
+2025-26-Arizona,3
 2025-26-Central Mich.,0
 2025-26-Southeastern La.,0
 2025-26-Norfolk St.,0
@@ -190,7 +190,7 @@ RecordID,Overall Seed
 2025-26-Presbyterian,0
 2025-26-Loyola Maryland,0
 2025-26-Massachusetts,0
-2025-26-Utah St.,41
+2025-26-Utah St.,42
 2025-26-Stonehill,0
 2025-26-Kent St.,0
 2025-26-Clemson,30
@@ -199,7 +199,7 @@ RecordID,Overall Seed
 2025-26-William & Mary,0
 2025-26-UIC,0
 2025-26-Abilene Christian,0
-2025-26-St. John's (NY),17
+2025-26-St. John's (NY),15
 2025-26-Western Ky.,0
 2025-26-Kennesaw St.,0
 2025-26-Delaware St.,0
@@ -210,7 +210,7 @@ RecordID,Overall Seed
 2025-26-Arkansas St.,0
 2025-26-Stony Brook,0
 2025-26-LIU,0
-2025-26-Arizona St.,49
+2025-26-Arizona St.,0
 2025-26-Idaho St.,0
 2025-26-UNC Greensboro,0
 2025-26-Utah,0
@@ -219,29 +219,29 @@ RecordID,Overall Seed
 2025-26-George Washington,0
 2025-26-UTSA,0
 2025-26-North Ala.,0
-2025-26-South Fla.,65
+2025-26-South Fla.,45
 2025-26-Brown,0
 2025-26-Idaho,0
-2025-26-Ohio St.,26
+2025-26-Ohio St.,28
 2025-26-Ga. Southern,0
-2025-26-Indiana,42
+2025-26-Indiana,40
 2025-26-Saint Joseph's,0
 2025-26-Monmouth,0
 2025-26-Southern U.,0
 2025-26-Louisiana Tech,0
-2025-26-Oklahoma St.,46
+2025-26-Oklahoma St.,55
 2025-26-Portland St.,0
 2025-26-Seattle U,0
 2025-26-Butler,0
 2025-26-Lamar University,0
-2025-26-Michigan St.,8
+2025-26-Michigan St.,10
 2025-26-Longwood,0
 2025-26-Mercer,0
 2025-26-Rhode Island,0
-2025-26-TCU,33
+2025-26-TCU,37
 2025-26-Denver,0
 2025-26-Eastern Ky.,0
-2025-26-McNeese,0
+2025-26-McNeese,68
 2025-26-Cal Poly,0
 2025-26-Charlotte,0
 2025-26-Fresno St.,0
@@ -257,28 +257,28 @@ RecordID,Overall Seed
 2025-26-Illinois,7
 2025-26-Georgia St.,0
 2025-26-Evansville,0
-2025-26-Notre Dame,0
+2025-26-Notre Dame,63
 2025-26-Morehead St.,0
 2025-26-Pittsburgh,0
 2025-26-Robert Morris,0
 2025-26-Belmont,0
-2025-26-UCLA,29
+2025-26-UCLA,32
 2025-26-Canisius,0
 2025-26-Columbia,0
 2025-26-Dayton,0
-2025-26-Virginia Tech,45
+2025-26-Virginia Tech,43
 2025-26-James Madison,0
-2025-26-Kansas,22
-2025-26-Missouri,51
+2025-26-Kansas,23
+2025-26-Missouri,48
 2025-26-Princeton,0
 2025-26-SIUE,0
 2025-26-Western Ill.,0
 2025-26-Milwaukee,0
 2025-26-Southern Ind.,0
 2025-26-Pepperdine,0
-2025-26-San Diego St.,57
+2025-26-San Diego St.,0
 2025-26-St. Thomas (MN),0
-2025-26-Texas,40
+2025-26-Texas,38
 2025-26-Jacksonville St.,0
 2025-26-Radford,0
 2025-26-Boston College,0
@@ -290,26 +290,26 @@ RecordID,Overall Seed
 2025-26-Marist,0
 2025-26-New Haven,0
 2025-26-Gonzaga,14
-2025-26-Arkansas,15
-2025-26-Oklahoma,48
+2025-26-Arkansas,17
+2025-26-Oklahoma,50
 2025-26-Iona,0
 2025-26-Alcorn,0
 2025-26-FDU,0
 2025-26-Grambling,0
 2025-26-Loyola Chicago,0
 2025-26-The Citadel,0
-2025-26-SFA,0
+2025-26-SFA,67
 2025-26-Sacramento St.,0
 2025-26-Towson,0
 2025-26-Saint Peter's,0
-2025-26-Ole Miss,60
+2025-26-Ole Miss,56
 2025-26-Utah Tech,0
 2025-26-Yale,0
 2025-26-Ark.-Pine Bluff,0
 2025-26-UMBC,0
 2025-26-FIU,0
 2025-26-Georgetown,0
-2025-26-Stanford,54
+2025-26-Stanford,0
 2025-26-Toledo,0
 2025-26-Ball St.,0
 2025-26-Chicago St.,0
@@ -325,8 +325,8 @@ RecordID,Overall Seed
 2025-26-Fla. Atlantic,0
 2025-26-Weber St.,0
 2025-26-Boston U.,0
-2025-26-Wake Forest,55
-2025-26-West Virginia,52
+2025-26-Wake Forest,47
+2025-26-West Virginia,58
 2025-26-Central Ark.,0
 2025-26-Jackson St.,0
 2025-26-Lehigh,0
@@ -336,14 +336,14 @@ RecordID,Overall Seed
 2025-26-Bowling Green,0
 2025-26-Bryant,0
 2025-26-Georgia,34
-2025-26-Villanova,32
+2025-26-Villanova,29
 2025-26-San Francisco,0
 2025-26-Nevada,0
 2025-26-American,0
 2025-26-Tarleton St.,0
-2025-26-Miami (FL),28
+2025-26-Miami (FL),26
 2025-26-Northern Ky.,0
-2025-26-Auburn,36
+2025-26-Auburn,33
 2025-26-Alabama A&M,0
 2025-26-Campbell,0
 2025-26-Dartmouth,0
@@ -356,11 +356,11 @@ RecordID,Overall Seed
 2025-26-Kansas City,0
 2025-26-Boise St.,0
 2025-26-Maine,0
-2025-26-Kansas St.,68
+2025-26-Kansas St.,0
 2025-26-Wofford,0
 2025-26-Army West Point,0
 2025-26-South Carolina,0
 2025-26-SMU,35
 2025-26-Austin Peay,0
-2025-26-Marquette,0
+2025-26-Marquette,65
 2025-26-Mount St. Mary's,0
