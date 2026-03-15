@@ -8,3 +8,6 @@ scratch/
 
 # Notebook checkpoints
 .ipynb_checkpoints/
+
+# Model training side effects
+catboost_info/

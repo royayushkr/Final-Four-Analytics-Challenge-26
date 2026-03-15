@@ -739,3 +739,107 @@ For audit trail and reproducibility history.
 ### Why do the complex v5 tree models get worse?
 
 Because the seeded-label sample is small, and the richer feature stack plus encodings overfit more easily than the linear ridge baseline.
+
+## 17) Private 2026 Final Pipeline
+
+This repository now also contains a private-task-specific final pipeline for the `2025-26` season snapshot dated `2026-03-15`.
+
+Primary entry point:
+
+- `code/build_submission_v7_private.py`
+
+Supporting modules:
+
+- `code/private_features.py`
+- `code/private_validation.py`
+
+### What changed from Kaggle-era versions
+
+The private v7 flow intentionally drops the old competition assumptions:
+
+- does not use `Bid Type` in modeling or post-processing
+- does not use the historical Kaggle test file for fitting
+- does not assume the test file already identifies selected teams
+- does not assign only season-residual seeds from prior years
+- writes one final `365`-row submission for the `2026-03-15` snapshot
+
+### Final modeling approach
+
+The private final task is treated as a constrained ranking problem:
+
+1. Train only on official train rows with known `Overall Seed`.
+2. Predict a continuous seed-strength score from committee-style resume features.
+3. Score all `365` teams in the final `2026-03-15` snapshot.
+4. Select the top `68` teams by model score.
+5. Assign exact unique overall seeds `1..68`.
+6. Assign `0` to all remaining teams.
+
+### New feature design
+
+The private feature stack includes:
+
+- strict parsing of all record-style fields into wins, losses, games, percentages, and margins
+- committee-style resume features such as `q12_wins`, `q34_losses`, `quality_win_score`, `bad_loss_penalty`, and `resume_balance`
+- NET movement features derived from `PrevNET` and current `NET Rank`
+- SOS context and interaction features
+- season-relative percentile and z-score features
+- conference-context features after normalizing `American` / `The American`
+- fold-safe clipping and missing-value indicators
+
+Raw `Team` identity and `Bid Type` are excluded from the final private model.
+
+### Validation framework
+
+The private final pipeline uses:
+
+- expanding-window folds:
+  - `2020-21..2021-22 -> 2022-23`
+  - `2020-21..2022-23 -> 2023-24`
+  - `2020-21..2023-24 -> 2024-25`
+- weighted fold emphasis on recency: `0.2 / 0.3 / 0.5`
+- 2026 weekly stability checks across all provided `2026` snapshots
+
+Candidate models tested in v7:
+
+- `ridge_only_context`
+- `catboost_only_context`
+- `ensemble_base`
+- `ensemble_context`
+- `ensemble_context_band`
+- `ensemble_context_lgbm`
+- `ensemble_context_pu`
+
+### Chosen final candidate
+
+The selected final candidate from the private v7 run is:
+
+- `ridge_only_context`
+
+Why it won:
+
+- best weighted composite loss on the expanding-window backtests
+- strongest recent-fold recall among the top candidates
+- weekly 2026 stability that was competitive with the more complex variants
+- lower implementation risk than the ensemble variants
+
+### Final private artifacts
+
+Diagnostics:
+
+- `artifacts/final_20260315/rolling_origin_metrics.csv`
+- `artifacts/final_20260315/weekly_stability_metrics.csv`
+- `artifacts/final_20260315/model_comparison.json`
+- `artifacts/final_20260315/feature_importance.csv`
+- `artifacts/final_20260315/final_selection_audit.csv`
+
+Final submission:
+
+- `submissions/final/submission_2026_20260315.csv`
+
+The final submission file satisfies these checks:
+
+- exactly `365` rows
+- columns exactly `RecordID,Overall Seed`
+- exactly `68` non-zero predictions
+- non-zero seeds are exactly the integers `1..68`
+- remaining `297` teams are assigned `0`

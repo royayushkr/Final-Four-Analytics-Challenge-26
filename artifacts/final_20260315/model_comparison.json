@@ -1,0 +1,225 @@
+{
+  "locked_assumptions": {
+    "final_row_set": "NCAA_Seed_Test_Set_2026_20260315.csv",
+    "official_train_only_for_fitting": true,
+    "historical_test_used_for_audit_only": true,
+    "weekly_2026_snapshots_used_for_stability_only": true,
+    "bid_type_used_in_final_model": false,
+    "team_identity_used_in_final_model": false
+  },
+  "candidate_specs": [
+    {
+      "name": "ridge_only_context",
+      "model_weights": {
+        "ridge": 1.0
+      },
+      "include_conference_context": true,
+      "use_band_model": false,
+      "band_weight": 0.0,
+      "use_pu_selector": false,
+      "pu_weight": 0.0,
+      "notes": "Stable linear baseline with full committee feature block."
+    },
+    {
+      "name": "catboost_only_context",
+      "model_weights": {
+        "catboost": 1.0
+      },
+      "include_conference_context": true,
+      "use_band_model": false,
+      "band_weight": 0.0,
+      "use_pu_selector": false,
+      "pu_weight": 0.0,
+      "notes": "Single nonlinear baseline with native categorical handling."
+    },
+    {
+      "name": "ensemble_base",
+      "model_weights": {
+        "ridge": 0.6,
+        "catboost": 0.4
+      },
+      "include_conference_context": false,
+      "use_band_model": false,
+      "band_weight": 0.0,
+      "use_pu_selector": false,
+      "pu_weight": 0.0,
+      "notes": "Default seed-strength ensemble without conference-context expansion."
+    },
+    {
+      "name": "ensemble_context",
+      "model_weights": {
+        "ridge": 0.6,
+        "catboost": 0.4
+      },
+      "include_conference_context": true,
+      "use_band_model": false,
+      "band_weight": 0.0,
+      "use_pu_selector": false,
+      "pu_weight": 0.0,
+      "notes": "Default private-final ensemble with conference context."
+    },
+    {
+      "name": "ensemble_context_band",
+      "model_weights": {
+        "ridge": 0.6,
+        "catboost": 0.4
+      },
+      "include_conference_context": true,
+      "use_band_model": true,
+      "band_weight": 0.1,
+      "use_pu_selector": false,
+      "pu_weight": 0.0,
+      "notes": "Default ensemble plus low-weight seed-band regularizer."
+    },
+    {
+      "name": "ensemble_context_lgbm",
+      "model_weights": {
+        "ridge": 0.5,
+        "catboost": 0.35,
+        "lgbm": 0.15
+      },
+      "include_conference_context": true,
+      "use_band_model": false,
+      "band_weight": 0.0,
+      "use_pu_selector": false,
+      "pu_weight": 0.0,
+      "notes": "Ensemble with low-weight LightGBM diversity component."
+    },
+    {
+      "name": "ensemble_context_pu",
+      "model_weights": {
+        "ridge": 0.6,
+        "catboost": 0.4
+      },
+      "include_conference_context": true,
+      "use_band_model": false,
+      "band_weight": 0.0,
+      "use_pu_selector": true,
+      "pu_weight": 0.1,
+      "notes": "Default ensemble plus low-impact PU bubble reranker."
+    }
+  ],
+  "candidate_summary": [
+    {
+      "candidate": "ridge_only_context",
+      "WeightedCompositeLoss": 34.52221038829414,
+      "WeightedConfirmedSeedRMSE": 30.745739800058843,
+      "WeightedFieldRecall": 0.6852941176470588,
+      "WeightedFieldPrecision": 0.6852941176470588,
+      "WeightedFieldF1": 0.6852941176470588,
+      "WeightedConfirmedTop68Recall": 0.7228132387706856,
+      "WeightedSeedOrderSpearman": -0.24587064031664335,
+      "RecentFoldRecallMin": 0.6617647058823529,
+      "FoldCount": 3,
+      "WeightSum": 1.0
+    },
+    {
+      "candidate": "ensemble_base",
+      "WeightedCompositeLoss": 34.57153488398684,
+      "WeightedConfirmedSeedRMSE": 30.75977017810449,
+      "WeightedFieldRecall": 0.6823529411764706,
+      "WeightedFieldPrecision": 0.6823529411764706,
+      "WeightedFieldF1": 0.6823529411764706,
+      "WeightedConfirmedTop68Recall": 0.7185579196217493,
+      "WeightedSeedOrderSpearman": -0.2562725929599694,
+      "RecentFoldRecallMin": 0.6617647058823529,
+      "FoldCount": 3,
+      "WeightSum": 1.0
+    },
+    {
+      "candidate": "ensemble_context_pu",
+      "WeightedCompositeLoss": 34.58244626685033,
+      "WeightedConfirmedSeedRMSE": 30.717740384497393,
+      "WeightedFieldRecall": 0.6779411764705883,
+      "WeightedFieldPrecision": 0.6779411764705883,
+      "WeightedFieldF1": 0.6779411764705883,
+      "WeightedConfirmedTop68Recall": 0.7228132387706856,
+      "WeightedSeedOrderSpearman": -0.2411228945722873,
+      "RecentFoldRecallMin": 0.6470588235294118,
+      "FoldCount": 3,
+      "WeightSum": 1.0
+    },
+    {
+      "candidate": "ensemble_context",
+      "WeightedCompositeLoss": 34.588357126507546,
+      "WeightedConfirmedSeedRMSE": 30.72365124415461,
+      "WeightedFieldRecall": 0.6779411764705883,
+      "WeightedFieldPrecision": 0.6779411764705883,
+      "WeightedFieldF1": 0.6779411764705883,
+      "WeightedConfirmedTop68Recall": 0.7228132387706856,
+      "WeightedSeedOrderSpearman": -0.2411228945722873,
+      "RecentFoldRecallMin": 0.6470588235294118,
+      "FoldCount": 3,
+      "WeightSum": 1.0
+    },
+    {
+      "candidate": "ensemble_context_band",
+      "WeightedCompositeLoss": 34.589547270048925,
+      "WeightedConfirmedSeedRMSE": 30.72484138769599,
+      "WeightedFieldRecall": 0.6779411764705883,
+      "WeightedFieldPrecision": 0.6779411764705883,
+      "WeightedFieldF1": 0.6779411764705883,
+      "WeightedConfirmedTop68Recall": 0.7228132387706856,
+      "WeightedSeedOrderSpearman": -0.24127761424660246,
+      "RecentFoldRecallMin": 0.6470588235294118,
+      "FoldCount": 3,
+      "WeightSum": 1.0
+    },
+    {
+      "candidate": "ensemble_context_lgbm",
+      "WeightedCompositeLoss": 34.72072227285497,
+      "WeightedConfirmedSeedRMSE": 30.820722272854972,
+      "WeightedFieldRecall": 0.675,
+      "WeightedFieldPrecision": 0.675,
+      "WeightedFieldF1": 0.675,
+      "WeightedConfirmedTop68Recall": 0.7185579196217493,
+      "WeightedSeedOrderSpearman": -0.2535721431715037,
+      "RecentFoldRecallMin": 0.6470588235294118,
+      "FoldCount": 3,
+      "WeightSum": 1.0
+    },
+    {
+      "candidate": "catboost_only_context",
+      "WeightedCompositeLoss": 35.509383243844944,
+      "WeightedConfirmedSeedRMSE": 31.43291265560965,
+      "WeightedFieldRecall": 0.6602941176470588,
+      "WeightedFieldPrecision": 0.6602941176470588,
+      "WeightedFieldF1": 0.6602941176470588,
+      "WeightedConfirmedTop68Recall": 0.6986603624901497,
+      "WeightedSeedOrderSpearman": -0.30884221079337687,
+      "RecentFoldRecallMin": 0.6323529411764706,
+      "FoldCount": 3,
+      "WeightSum": 1.0
+    }
+  ],
+  "chosen_candidate": {
+    "candidate": "ridge_only_context",
+    "WeightedCompositeLoss": 34.52221038829414,
+    "WeightedConfirmedSeedRMSE": 30.745739800058843,
+    "WeightedFieldRecall": 0.6852941176470588,
+    "WeightedFieldPrecision": 0.6852941176470588,
+    "WeightedFieldF1": 0.6852941176470588,
+    "WeightedConfirmedTop68Recall": 0.7228132387706856,
+    "WeightedSeedOrderSpearman": -0.24587064031664335,
+    "RecentFoldRecallMin": 0.6617647058823529,
+    "FoldCount": 3,
+    "WeightSum": 1.0,
+    "Top68Jaccard": 0.9312382229887259,
+    "Top16Overlap": 0.8745884318639737,
+    "Top80MeanSeedMovement": 5.993602400309718,
+    "selection_reason": "Best weighted composite loss with recency recall guard and weekly stability tiebreak"
+  },
+  "chosen_candidate_spec": {
+    "name": "ridge_only_context",
+    "model_weights": {
+      "ridge": 1.0
+    },
+    "include_conference_context": true,
+    "use_band_model": false,
+    "band_weight": 0.0,
+    "use_pu_selector": false,
+    "pu_weight": 0.0,
+    "notes": "Stable linear baseline with full committee feature block."
+  },
+  "submission_path": "/Users/ayushkumar/Desktop/final-four-analytics-challenge-26/submissions/final/submission_2026_20260315.csv"
+}
