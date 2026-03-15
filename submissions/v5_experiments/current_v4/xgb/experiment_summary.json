@@ -1,0 +1,20 @@
+{
+  "experiment_name": "current_v4",
+  "model_family": "xgb",
+  "status": "completed",
+  "feature_blocks": [
+    "core_parsed",
+    "season_relative",
+    "conference_relative"
+  ],
+  "include_bid_type_feature": true,
+  "include_team_feature": true,
+  "use_bid_type_selection": true,
+  "notes": "Reproduced v4-style feature set under the unified v5 evaluator.",
+  "season_rank_rmse_mean": 5.010846401171157,
+  "season_rank_rmse_std": 0.6027064613590509,
+  "full_rmse_zero_mean": 2.149685604514738,
+  "full_rmse_zero_std": 0.25977635521406006,
+  "selected_count_test": 91,
+  "non_zero_count_test": 91
+}

@@ -1,0 +1,24 @@
+{
+  "experiment_name": "v5_base_target_safe_encodings",
+  "model_family": "ridge",
+  "status": "completed",
+  "feature_blocks": [
+    "core_parsed",
+    "missing_indicators",
+    "season_relative",
+    "conference_relative",
+    "robust_numeric",
+    "interaction_refinements",
+    "team_conference_encoding"
+  ],
+  "include_bid_type_feature": true,
+  "include_team_feature": true,
+  "use_bid_type_selection": true,
+  "notes": "",
+  "season_rank_rmse_mean": 4.262252823066048,
+  "season_rank_rmse_std": 0.4674473175818661,
+  "full_rmse_zero_mean": 1.8282515548363274,
+  "full_rmse_zero_std": 0.19889680626418085,
+  "selected_count_test": 91,
+  "non_zero_count_test": 91
+}

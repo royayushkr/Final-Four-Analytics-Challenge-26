@@ -1,0 +1,29 @@
+{
+  "oof_rank_rmse_ridge_alpha_grid": {
+    "8.0": 4.288773052656057,
+    "12.0": 4.212240720513276,
+    "16.0": 4.160437110183396,
+    "20.0": 4.1401162120157915,
+    "24.0": 4.137205078728128,
+    "28.0": 4.161402296859223,
+    "32.0": 4.13526318466258,
+    "40.0": 4.146900908943253
+  },
+  "best_ridge_alpha": 32.0,
+  "oof_rank_rmse_by_model": {
+    "ridge": 4.13526318466258,
+    "xgb": 5.338351053262747,
+    "extra_trees": 5.560907729779057
+  },
+  "oof_rank_rmse_blend": 4.040954994685824,
+  "blend_weights": {
+    "ridge": 0.8,
+    "xgb": 0.15,
+    "extra_trees": 0.04999999999999996
+  },
+  "selected_count_test": 91,
+  "non_zero_count_test": 91,
+  "include_team_feature": true,
+  "include_bid_type_feature": true,
+  "selection_source": "Bid Type non-null rows"
+}

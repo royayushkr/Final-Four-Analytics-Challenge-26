@@ -1,0 +1,8 @@
+{
+  "experiment_name": "v5_shin",
+  "model_family": "n/a",
+  "status": "skipped",
+  "skip_reason": "SKIPPED_NO_MARKET_INPUTS",
+  "feature_blocks": [],
+  "notes": "efficient_shin_conversion is not relevant because the dataset has no odds-like inputs."
+}

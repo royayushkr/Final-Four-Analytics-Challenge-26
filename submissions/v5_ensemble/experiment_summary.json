@@ -1,0 +1,17 @@
+{
+  "experiment_name": "v5_ensemble",
+  "model_family": "rank_blend",
+  "status": "completed",
+  "base_runs": [
+    "v5_base_core/lightgbm",
+    "current_v4/ridge",
+    "v5_base_target_safe_encodings/catboost"
+  ],
+  "season_rank_rmse_mean": 4.925142445904464,
+  "blend_weights": {
+    "Score__v5_base_core__lightgbm": 0.2,
+    "Score__current_v4__ridge": 0.65,
+    "Score__v5_base_target_safe_encodings__catboost": 0.15000000000000002
+  },
+  "selected_count_test": 91
+}

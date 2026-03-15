@@ -1,0 +1,19 @@
+{
+  "experiment_name": "v5_base_core_missing",
+  "model_family": "ridge",
+  "status": "completed",
+  "feature_blocks": [
+    "core_parsed",
+    "missing_indicators"
+  ],
+  "include_bid_type_feature": true,
+  "include_team_feature": true,
+  "use_bid_type_selection": true,
+  "notes": "",
+  "season_rank_rmse_mean": 4.296755651188809,
+  "season_rank_rmse_std": 1.0030631943881811,
+  "full_rmse_zero_mean": 1.8441153385295768,
+  "full_rmse_zero_std": 0.43337416929500444,
+  "selected_count_test": 91,
+  "non_zero_count_test": 91
+}

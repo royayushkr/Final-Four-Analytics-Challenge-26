@@ -1,0 +1,92 @@
+RecordID,Season,Team,v6_primary,v6_conservative_low_seed,v6_aggressive_ridge,v6_lgbm_low_seed
+2020-21-Baylor,2020-21,Baylor,2.0,2.0,2.0,2.0
+2020-21-Arkansas,2020-21,Arkansas,9.0,9.0,9.0,9.0
+2020-21-Purdue,2020-21,Purdue,14.0,14.0,14.0,14.0
+2020-21-OklahomaSt.,2020-21,Oklahoma St.,15.0,15.0,15.0,15.0
+2020-21-SouthernCalifornia,2020-21,Southern California,21.0,21.0,21.0,21.0
+2020-21-TexasTech,2020-21,Texas Tech,22.0,22.0,22.0,22.0
+2020-21-Wisconsin,2020-21,Wisconsin,35.0,35.0,35.0,35.0
+2020-21-Syracuse,2020-21,Syracuse,41.0,41.0,41.0,41.0
+2020-21-UCLA,2020-21,UCLA,44.0,44.0,44.0,44.0
+2020-21-Winthrop,2020-21,Winthrop,50.0,50.0,50.0,51.0
+2020-21-UCSantaBarbara,2020-21,UC Santa Barbara,49.0,49.0,49.0,49.0
+2020-21-Ohio,2020-21,Ohio,51.0,51.0,51.0,50.0
+2020-21-Liberty,2020-21,Liberty,55.0,55.0,55.0,55.0
+2020-21-UNCGreensboro,2020-21,UNC Greensboro,53.0,53.0,53.0,53.0
+2020-21-AbileneChristian,2020-21,Abilene Christian,54.0,54.0,54.0,54.0
+2020-21-GrandCanyon,2020-21,Grand Canyon,59.0,59.0,59.0,59.0
+2020-21-Drexel,2020-21,Drexel,63.0,63.0,63.0,63.0
+2020-21-MountSt.Mary's,2020-21,Mount St. Mary's,65.0,65.0,65.0,65.0
+2021-22-Arizona,2021-22,Arizona,2.0,2.0,2.0,2.0
+2021-22-TexasTech,2021-22,Texas Tech,12.0,12.0,12.0,12.0
+2021-22-Iowa,2021-22,Iowa,20.0,20.0,20.0,20.0
+2021-22-Illinois,2021-22,Illinois,14.0,14.0,14.0,14.0
+2021-22-MurraySt.,2021-22,Murray St.,26.0,26.0,26.0,26.0
+2021-22-SanFrancisco,2021-22,San Francisco,25.0,25.0,25.0,25.0
+2021-22-SouthernCalifornia,2021-22,Southern California,37.0,37.0,40.0,37.0
+2021-22-Davidson,2021-22,Davidson,43.0,47.0,47.0,47.0
+2021-22-TCU,2021-22,TCU,33.0,33.0,33.0,33.0
+2021-22-IowaSt.,2021-22,Iowa St.,40.0,40.0,37.0,40.0
+2021-22-Wyoming,2021-22,Wyoming,41.0,41.0,41.0,41.0
+2021-22-NotreDame,2021-22,Notre Dame,47.0,43.0,43.0,43.0
+2021-22-Creighton,2021-22,Creighton,34.0,34.0,34.0,34.0
+2021-22-Chattanooga,2021-22,Chattanooga,51.0,51.0,51.0,51.0
+2021-22-SouthDakotaSt.,2021-22,South Dakota St.,52.0,52.0,52.0,52.0
+2021-22-Richmond,2021-22,Richmond,49.0,49.0,49.0,49.0
+2021-22-WrightSt.,2021-22,Wright St.,65.0,65.0,65.0,65.0
+2022-23-Alabama,2022-23,Alabama,1.0,1.0,1.0,1.0
+2022-23-Kansas,2022-23,Kansas,3.0,3.0,3.0,3.0
+2022-23-SanDiegoSt.,2022-23,San Diego St.,9.0,9.0,9.0,9.0
+2022-23-Baylor,2022-23,Baylor,12.0,12.0,12.0,12.0
+2022-23-Arkansas,2022-23,Arkansas,20.0,20.0,20.0,20.0
+2022-23-Xavier,2022-23,Xavier,17.0,17.0,17.0,17.0
+2022-23-Miami(FL),2022-23,Miami (FL),28.0,28.0,28.0,28.0
+2022-23-Northwestern,2022-23,Northwestern,30.0,30.0,30.0,30.0
+2022-23-MississippiSt.,2022-23,Mississippi St.,43.0,43.0,43.0,43.0
+2022-23-SouthernCalifornia,2022-23,Southern California,39.0,39.0,39.0,39.0
+2022-23-Col.ofCharleston,2022-23,Col. of Charleston,47.0,47.0,47.0,47.0
+2022-23-VCU,2022-23,VCU,49.0,49.0,49.0,49.0
+2022-23-Drake,2022-23,Drake,51.0,51.0,51.0,51.0
+2022-23-KentSt.,2022-23,Kent St.,50.0,50.0,50.0,50.0
+2022-23-Furman,2022-23,Furman,54.0,54.0,54.0,54.0
+2022-23-Louisiana,2022-23,Louisiana,53.0,53.0,53.0,53.0
+2022-23-UCSantaBarbara,2022-23,UC Santa Barbara,56.0,56.0,56.0,56.0
+2022-23-MontanaSt.,2022-23,Montana St.,58.0,58.0,58.0,58.0
+2022-23-A&M-CorpusChristi,2022-23,A&M-Corpus Christi,66.0,66.0,66.0,66.0
+2022-23-SoutheastMo.St.,2022-23,Southeast Mo. St.,67.0,67.0,67.0,67.0
+2022-23-TexasSouthern,2022-23,Texas Southern,65.0,65.0,65.0,65.0
+2023-24-Uconn,2023-24,Uconn,1.0,1.0,1.0,1.0
+2023-24-Alabama,2023-24,Alabama,16.0,16.0,16.0,16.0
+2023-24-Marquette,2023-24,Marquette,7.0,7.0,7.0,7.0
+2023-24-Baylor,2023-24,Baylor,9.0,9.0,9.0,9.0
+2023-24-Wisconsin,2023-24,Wisconsin,19.0,19.0,19.0,19.0
+2023-24-NewMexico,2023-24,New Mexico,22.0,22.0,24.0,22.0
+2023-24-Clemson,2023-24,Clemson,24.0,24.0,22.0,24.0
+2023-24-WashingtonSt.,2023-24,Washington St.,36.0,36.0,36.0,36.0
+2023-24-GrandCanyon,2023-24,Grand Canyon,47.0,47.0,47.0,47.0
+2023-24-SouthCarolina,2023-24,South Carolina,26.0,26.0,26.0,26.0
+2023-24-Northwestern,2023-24,Northwestern,42.0,42.0,42.0,42.0
+2023-24-Virginia,2023-24,Virginia,41.0,41.0,41.0,41.0
+2023-24-Oregon,2023-24,Oregon,43.0,43.0,43.0,43.0
+2023-24-NCState,2023-24,NC State,45.0,45.0,45.0,45.0
+2023-24-MoreheadSt.,2023-24,Morehead St.,57.0,57.0,57.0,57.0
+2023-24-SouthDakotaSt.,2023-24,South Dakota St.,59.0,59.0,59.0,59.0
+2023-24-WesternKy.,2023-24,Western Ky.,60.0,60.0,60.0,60.0
+2023-24-Longwood,2023-24,Longwood,63.0,63.0,63.0,63.0
+2023-24-LongBeachSt.,2023-24,Long Beach St.,62.0,61.0,62.0,62.0
+2023-24-SaintPeter's,2023-24,Saint Peter's,61.0,62.0,61.0,61.0
+2023-24-MontanaSt.,2023-24,Montana St.,65.0,65.0,65.0,65.0
+2024-25-Auburn,2024-25,Auburn,1.0,1.0,1.0,1.0
+2024-25-IowaSt.,2024-25,Iowa St.,10.0,10.0,10.0,10.0
+2024-25-Kentucky,2024-25,Kentucky,11.0,11.0,11.0,11.0
+2024-25-Wisconsin,2024-25,Wisconsin,12.0,12.0,12.0,12.0
+2024-25-SaintMary's(CA),2024-25,Saint Mary's (CA),20.0,20.0,20.0,20.0
+2024-25-Clemson,2024-25,Clemson,18.0,18.0,18.0,18.0
+2024-25-UCSanDiego,2024-25,UC San Diego,47.0,47.0,47.0,47.0
+2024-25-Memphis,2024-25,Memphis,27.0,27.0,27.0,27.0
+2024-25-Yale,2024-25,Yale,54.0,54.0,54.0,54.0
+2024-25-GrandCanyon,2024-25,Grand Canyon,51.0,51.0,51.0,51.0
+2024-25-Wofford,2024-25,Wofford,59.0,59.0,59.0,59.0
+2024-25-RobertMorris,2024-25,Robert Morris,60.0,60.0,60.0,60.0
+2024-25-MountSt.Mary's,2024-25,Mount St. Mary's,66.0,66.0,66.0,66.0
+2024-25-AlabamaSt.,2024-25,Alabama St.,67.0,67.0,67.0,67.0

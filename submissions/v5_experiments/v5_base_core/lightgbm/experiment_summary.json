@@ -1,0 +1,18 @@
+{
+  "experiment_name": "v5_base_core",
+  "model_family": "lightgbm",
+  "status": "completed",
+  "feature_blocks": [
+    "core_parsed"
+  ],
+  "include_bid_type_feature": true,
+  "include_team_feature": true,
+  "use_bid_type_selection": true,
+  "notes": "",
+  "season_rank_rmse_mean": 4.107475794805236,
+  "season_rank_rmse_std": 1.563300323422068,
+  "full_rmse_zero_mean": 1.7608296931076097,
+  "full_rmse_zero_std": 0.6686896653465845,
+  "selected_count_test": 91,
+  "non_zero_count_test": 91
+}

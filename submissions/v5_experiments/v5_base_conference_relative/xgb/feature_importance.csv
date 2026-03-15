@@ -1,0 +1,296 @@
+feature,importance
+num__NET Rank_LOG,0.532881498336792
+num__SEED_STRENGTH_HEUR,0.11900068074464798
+num__NET Rank_INV,0.08674531430006027
+num__PrevNET_SEASON_PCT,0.03571365773677826
+num__NET_WL_INTERACTION,0.03262956440448761
+num__AvgOppNET_SEASON_Z,0.0259245615452528
+num__PrevNET,0.018401533365249634
+num__NET Rank,0.00968810636550188
+num__NETSOS_SEASON_Z,0.008977453224360943
+cat__Bid Type_AL,0.008541842922568321
+num__NET Rank_SEASON_PCT,0.008536066859960556
+num__Quadrant1_L,0.005687748547643423
+num__PREVNET_WL_INTERACTION,0.00561514962464571
+num__GOOD_WIN_RATE_SEASON_PCT,0.004898993764072657
+num__AvgOppNET,0.0045728231780231
+num__NET Rank_SEASON_Z,0.004344828426837921
+num__Quadrant1_PCT,0.004122449085116386
+num__PrevNET_SEASON_Z,0.004001578316092491
+num__PrevNET_CONF_PCT,0.003999251406639814
+num__Q1_GAME_SHARE,0.003705590730533004
+num__NETSOS_SEASON_PCT,0.0032880837097764015
+num__Quadrant2_PCT,0.0032582387793809175
+num__AvgOppNETRank,0.0025698307435959578
+cat__Team_Missouri,0.0025488545652478933
+num__Q_GOOD_WIN_SHARE,0.0024653570726513863
+num__NET Rank_CONF_PCT,0.0023892507888376713
+cat__Season_2024-25,0.0023262319155037403
+num__Quadrant4_L,0.002214931882917881
+num__WL_MARGIN,0.002097769407555461
+num__GOOD_WIN_RATE,0.0020528514869511127
+num__AvgOppNET_SEASON_PCT,0.0017859964864328504
+num__AvgOppNETRank_SEASON_Z,0.0016808860236778855
+num__WL_PCT_SEASON_PCT,0.0016625982243567705
+cat__Conference_SEC,0.001609887694939971
+num__NETSOS,0.0015123725170269608
+num__Quadrant1_MARGIN,0.0014959551626816392
+num__Quadrant3_W,0.0014198921853676438
+num__NETSOS_INV,0.001407999312505126
+cat__Conference_MVC,0.0013297951081767678
+num__NETSOS_LOG,0.0012224381789565086
+num__Non-ConferenceRecord_G,0.0012045209296047688
+num__WL_PCT_SEASON_Z,0.0011869551381096244
+num__WL_L,0.0009270173613913357
+num__Quadrant2_W,0.0009175479644909501
+num__Quadrant3_MARGIN,0.0008934157085604966
+num__ROAD_PERF_DELTA,0.0008890930330380797
+num__Quadrant2_MARGIN,0.0008496060036122799
+num__NONCONF_PERF_DELTA,0.0008236882858909667
+num__Q_WEIGHTED_LOSSES,0.0008108985493890941
+num__Q2_WIN_RATE,0.0007596192299388349
+num__Q1_WIN_RATE,0.0007570797461085021
+num__Quadrant3_L,0.000743210141081363
+num__CONF_PERF_DELTA,0.0007283599697984755
+num__AvgOppNETRank_SEASON_PCT,0.0007263416773639619
+cat__Team_Clemson,0.0007212502532638609
+cat__Team_Drake,0.0006774713983759284
+num__Quadrant4_W,0.0006598297622986138
+num__BAD_LOSS_RATE_SEASON_PCT,0.0006242460221983492
+num__Q_WEIGHTED_WINS,0.0006110375979915261
+num__Q_BAD_LOSS_SHARE,0.000580123218242079
+num__ROAD_SOS_INTERACTION,0.0005794217577204108
+num__WL_PCT,0.0005757178296335042
+num__ROAD_GAME_SHARE,0.0005590038490481675
+cat__Team_Villanova,0.0005442786496132612
+num__Q2_GAME_SHARE,0.00048445063293911517
+num__TOP_RESUME_INDEX,0.0004627506423275918
+num__OppNetDiff,0.0004480241041164845
+cat__Team_Miami (FL),0.00043910887325182557
+cat__Conference_Mountain West,0.00041471613803878427
+num__RoadWL_G,0.00039314888999797404
+num__Q_NET_SCORE,0.0003653861640486866
+cat__Conference_Atlantic 10,0.00034703611163422465
+num__Non-ConferenceRecord_PCT_SEASON_PCT,0.00033548829378560185
+num__Conf.Record_PCT_SEASON_Z,0.0003273719921708107
+num__NETSOS_CONF_PCT,0.00031976663740351796
+num__Non-ConferenceRecord_PCT,0.00030286607216112316
+num__AvgOppNETRank_INV,0.0002980901044793427
+num__RoadWL_MARGIN,0.0002852270845323801
+num__Quadrant2_G,0.0002764785895124078
+num__Quadrant4_MARGIN,0.00027345152921043336
+num__RoadWL_W,0.00026683046598918736
+num__TOP_RESUME_INDEX_SEASON_PCT,0.0002663789491634816
+num__Quadrant2_L,0.00026376484311185777
+num__RoadWL_PCT_SEASON_PCT,0.0002623202162794769
+num__RoadWL_PCT_SEASON_Z,0.00026204396272078156
+num__Conf.Record_G,0.0002619544102344662
+num__NONCONF_GAME_SHARE,0.0002552205405663699
+num__Quadrant1_W,0.00025164696853607893
+cat__Conference_Patriot,0.00022379668371286243
+num__Non-ConferenceRecord_PCT_SEASON_Z,0.00019533255544956774
+num__SeasonStart,0.00018966062634717673
+num__WL_W,0.00018756900681182742
+num__Conf.Record_PCT,0.00018585582438390702
+num__Q_NET_SCORE_SEASON_PCT,0.0001847887906478718
+num__SOS_Diff,0.00017848638526629657
+num__AvgOppNETRank_CONF_PCT,0.000172844942426309
+num__Quadrant1_G,0.00016293965745717287
+num__Conf.Record_PCT_SEASON_PCT,0.00015784882998559624
+cat__Team_Colgate,0.00015399330004584044
+num__Q_NET_SCORE_PER_GAME,0.0001455078017897904
+num__CONF_GAME_SHARE,0.0001439578627469018
+num__Conf.Record_W,0.00013603732804767787
+num__Q_NET_WL_INTERACTION,0.00013520898937713355
+num__RoadWL_L,0.00012302096001803875
+num__Quadrant4_G,0.00012179750046925619
+num__NET_Improvement,0.00012003541633021086
+num__NETNonConfSOS_INV,0.00011963936412939802
+num__NETNonConfSOS_LOG,0.0001184852299047634
+num__NETNonConfSOS_SEASON_PCT,0.00011108820035587996
+num__BAD_LOSS_RATE,0.0001072242739610374
+num__WL_G,0.00010702622967073694
+num__NETNonConfSOS,0.00010670094343367964
+num__Non-ConferenceRecord_L,0.00010239295079372823
+num__Quadrant3_G,0.00010140790254808962
+num__BAD_LOSS_RATE_SEASON_Z,9.876090189209208e-05
+num__RoadWL_PCT,9.412283543497324e-05
+num__WL_TOTAL_GAMES,9.371893247589469e-05
+num__Conf.Record_L,9.116164437728003e-05
+cat__Team_Akron,8.6529842519667e-05
+cat__Conference_ACC,7.556600030511618e-05
+num__NETNonConfSOS_SEASON_Z,7.536219345638528e-05
+cat__Conference_Big East,7.477448525605723e-05
+num__Non-ConferenceRecord_W,7.194115460151806e-05
+num__Non-ConferenceRecord_MARGIN,7.105368422344327e-05
+cat__Team_Kentucky,6.875188410049304e-05
+num__Q_NET_SCORE_SEASON_Z,6.470423977589235e-05
+num__NONCONF_SOS_INTERACTION,6.327005394268781e-05
+num__Quadrant4_PCT,5.639930895995349e-05
+cat__Season_2022-23,5.561072248383425e-05
+num__GOOD_WIN_RATE_SEASON_Z,5.1346698455745354e-05
+num__Conf.Record_MARGIN,5.059011891717091e-05
+num__Quadrant3_PCT,4.415856528794393e-05
+cat__Team_Indiana,3.989359174738638e-05
+num__TOP_RESUME_INDEX_SEASON_Z,3.633865708252415e-05
+cat__Season_2023-24,3.312747867312282e-05
+cat__Conference_Big South,3.0363413316081278e-05
+cat__Team_West Virginia,2.925728404079564e-05
+cat__Team_Creighton,2.098471304634586e-05
+cat__Season_2021-22,1.7788082914194092e-05
+cat__Team_Vermont,1.7204891264555044e-05
+cat__Team_American,1.4931290024833288e-05
+cat__Conference_MAC,1.3952619156043511e-05
+cat__Conference_Big Ten,1.2946817150805146e-05
+cat__Team_Tennessee,1.2439173588063568e-05
+cat__Team_Virginia,1.224698280566372e-05
+cat__Team_Longwood,1.1373738743714057e-05
+cat__Team_Colorado,1.1346532119205222e-05
+cat__Conference_America East,1.0048433068732265e-05
+cat__Team_Ole Miss,9.927438441081904e-06
+num__PrevNET_INV,7.465900125680491e-06
+cat__Conference_Big 12,6.804381428082706e-06
+cat__Team_Duke,5.99712166149402e-06
+cat__Conference_The American,5.650920229527401e-06
+cat__Team_Gonzaga,5.2928539844288025e-06
+num__AvgOppNET_CONF_PCT,3.461350615907577e-06
+cat__Conference_Pac-12,3.3246724342461675e-06
+num__AvgOppNETRank_LOG,3.087221330133616e-06
+cat__Team_San Diego St.,3.0256883292167913e-06
+cat__Team_St. John's (NY),0.0
+cat__Team_Seton Hall,0.0
+cat__Team_St. Bonaventure,0.0
+cat__Team_Texas,0.0
+cat__Team_Texas Tech,0.0
+cat__Team_Stetson,0.0
+cat__Team_TCU,0.0
+cat__Team_Texas A&M,0.0
+cat__Team_Texas Southern,0.0
+cat__Conference_NEC,0.0
+cat__Team_Samford,0.0
+cat__Team_Saint Peter's,0.0
+cat__Team_Saint Mary's (CA),0.0
+cat__Conference_WCC,0.0
+cat__Team_Saint Francis,0.0
+cat__Team_SIUE,0.0
+cat__Team_Rutgers,0.0
+cat__Team_Purdue,0.0
+cat__Team_Providence,0.0
+cat__Team_Princeton,0.0
+cat__Team_Pittsburgh,0.0
+cat__Team_Penn St.,0.0
+cat__Team_Oregon St.,0.0
+cat__Team_Oregon,0.0
+cat__Team_Oral Roberts,0.0
+cat__Team_Troy,0.0
+cat__Team_VCU,0.0
+cat__Team_UAB,0.0
+cat__Team_UCLA,0.0
+cat__Conference_MAAC,0.0
+cat__Conference_Ivy League,0.0
+cat__Conference_Horizon,0.0
+cat__Conference_CUSA,0.0
+cat__Conference_OVC,0.0
+cat__Conference_CAA,0.0
+cat__Conference_Big West,0.0
+cat__Conference_SWAC,0.0
+cat__Conference_Big Sky,0.0
+cat__Conference_SoCon,0.0
+cat__Conference_Southland,0.0
+cat__Conference_ASUN,0.0
+cat__Conference_Summit League,0.0
+cat__Team_Yale,0.0
+cat__Team_Xavier,0.0
+cat__Team_Wisconsin,0.0
+cat__Team_Wichita St.,0.0
+cat__Conference_Sun Belt,0.0
+cat__Team_Wagner,0.0
+cat__Team_Virginia Tech,0.0
+cat__Conference_WAC,0.0
+cat__Team_Vanderbilt,0.0
+cat__Conference_MEAC,0.0
+cat__Team_Utah St.,0.0
+cat__Team_UNCW,0.0
+cat__Team_UNC Asheville,0.0
+cat__Team_UConn,0.0
+cat__Team_Omaha,0.0
+cat__Team_Cleveland St.,0.0
+cat__Team_Oklahoma,0.0
+cat__Team_Eastern Wash.,0.0
+cat__Team_Bryant,0.0
+cat__Team_Cal St. Fullerton,0.0
+cat__Team_Col. of Charleston,0.0
+cat__Team_Colorado St.,0.0
+cat__Team_Dayton,0.0
+cat__Team_Delaware,0.0
+cat__Team_Duquesne,0.0
+cat__Team_FDU,0.0
+cat__Team_Baylor,0.0
+cat__Team_Fla. Atlantic,0.0
+cat__Team_Florida,0.0
+cat__Team_Florida St.,0.0
+cat__Team_Georgetown,0.0
+cat__Team_Georgia,0.0
+cat__Team_Georgia St.,0.0
+cat__Team_Georgia Tech,0.0
+cat__Team_Boise St.,0.0
+cat__Team_BYU,0.0
+cat__Team_Grand Canyon,0.0
+num__NETSOS_IS_MISSING,0.0
+num__PrevNET_LOG,0.0
+num__AvgOppNET_INV,0.0
+num__AvgOppNET_LOG,0.0
+num__NET Rank_IS_MISSING,0.0
+num__PrevNET_IS_MISSING,0.0
+num__AvgOppNETRank_IS_MISSING,0.0
+num__AvgOppNET_IS_MISSING,0.0
+num__NETNonConfSOS_IS_MISSING,0.0
+cat__Team_Auburn,0.0
+cat__Season_2020-21,0.0
+cat__Team_A&M-Corpus Christi,0.0
+cat__Team_Alabama,0.0
+cat__Team_App State,0.0
+cat__Team_Arizona,0.0
+cat__Team_Arizona St.,0.0
+cat__Team_Arkansas,0.0
+cat__Team_Grambling,0.0
+cat__Team_Hartford,0.0
+cat__Team_Ohio St.,0.0
+cat__Team_Nebraska,0.0
+cat__Team_Michigan,0.0
+cat__Team_Michigan St.,0.0
+cat__Team_Mississippi St.,0.0
+cat__Team_Montana,0.0
+cat__Team_Montana St.,0.0
+cat__Team_Morehead St.,0.0
+cat__Team_NC State,0.0
+cat__Team_Nevada,0.0
+cat__Team_McNeese,0.0
+cat__Team_New Mexico,0.0
+cat__Team_New Mexico St.,0.0
+cat__Team_Norfolk St.,0.0
+cat__Team_North Carolina,0.0
+cat__Team_North Texas,0.0
+cat__Team_Northern Ky.,0.0
+cat__Team_Oakland,0.0
+cat__Team_Memphis,0.0
+cat__Team_Maryland,0.0
+cat__Team_High Point,0.0
+cat__Team_James Madison,0.0
+cat__Team_Houston,0.0
+cat__Team_Howard,0.0
+cat__Team_Illinois,0.0
+cat__Team_Iona,0.0
+cat__Team_Iowa,0.0
+cat__Team_Iowa St.,0.0
+cat__Team_Jacksonville St.,0.0
+cat__Team_Kansas,0.0
+cat__Team_Marquette,0.0
+cat__Team_Kansas St.,0.0
+cat__Team_Kennesaw St.,0.0
+cat__Team_LSU,0.0
+cat__Team_Liberty,0.0
+cat__Team_Lipscomb,0.0
+cat__Team_Louisville,0.0
+cat__Team_Loyola Chicago,0.0
+cat__Bid Type_AQ,0.0

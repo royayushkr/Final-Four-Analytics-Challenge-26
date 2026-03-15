@@ -1,0 +1,8 @@
+{
+  "experiment_name": "v5_mult_baseline",
+  "model_family": "n/a",
+  "status": "skipped",
+  "skip_reason": "SKIPPED_NO_MARKET_INPUTS",
+  "feature_blocks": [],
+  "notes": "No valid market conversion baseline exists for this repository."
+}

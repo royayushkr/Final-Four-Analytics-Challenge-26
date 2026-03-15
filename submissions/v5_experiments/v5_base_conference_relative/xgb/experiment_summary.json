@@ -1,0 +1,21 @@
+{
+  "experiment_name": "v5_base_conference_relative",
+  "model_family": "xgb",
+  "status": "completed",
+  "feature_blocks": [
+    "core_parsed",
+    "missing_indicators",
+    "season_relative",
+    "conference_relative"
+  ],
+  "include_bid_type_feature": true,
+  "include_team_feature": true,
+  "use_bid_type_selection": true,
+  "notes": "",
+  "season_rank_rmse_mean": 5.005599259697898,
+  "season_rank_rmse_std": 0.6052630818500606,
+  "full_rmse_zero_mean": 2.147459555853751,
+  "full_rmse_zero_std": 0.26104428724972456,
+  "selected_count_test": 91,
+  "non_zero_count_test": 91
+}

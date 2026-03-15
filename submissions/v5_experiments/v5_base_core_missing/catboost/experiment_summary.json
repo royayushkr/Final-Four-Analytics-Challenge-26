@@ -1,0 +1,19 @@
+{
+  "experiment_name": "v5_base_core_missing",
+  "model_family": "catboost",
+  "status": "completed",
+  "feature_blocks": [
+    "core_parsed",
+    "missing_indicators"
+  ],
+  "include_bid_type_feature": true,
+  "include_team_feature": true,
+  "use_bid_type_selection": true,
+  "notes": "",
+  "season_rank_rmse_mean": 4.856240839662938,
+  "season_rank_rmse_std": 0.9216369692607663,
+  "full_rmse_zero_mean": 2.0832368176950293,
+  "full_rmse_zero_std": 0.39585973173024835,
+  "selected_count_test": 91,
+  "non_zero_count_test": 91
+}

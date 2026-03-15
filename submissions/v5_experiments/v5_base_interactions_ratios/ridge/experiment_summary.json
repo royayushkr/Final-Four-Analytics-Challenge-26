@@ -1,0 +1,23 @@
+{
+  "experiment_name": "v5_base_interactions_ratios",
+  "model_family": "ridge",
+  "status": "completed",
+  "feature_blocks": [
+    "core_parsed",
+    "missing_indicators",
+    "season_relative",
+    "conference_relative",
+    "robust_numeric",
+    "interaction_refinements"
+  ],
+  "include_bid_type_feature": true,
+  "include_team_feature": true,
+  "use_bid_type_selection": true,
+  "notes": "",
+  "season_rank_rmse_mean": 4.315401904961892,
+  "season_rank_rmse_std": 1.1804531604250108,
+  "full_rmse_zero_mean": 1.8525226261810257,
+  "full_rmse_zero_std": 0.5096132209279022,
+  "selected_count_test": 91,
+  "non_zero_count_test": 91
+}

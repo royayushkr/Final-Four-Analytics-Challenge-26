@@ -1,0 +1,20 @@
+{
+  "experiment_name": "current_v4",
+  "model_family": "ridge",
+  "status": "completed",
+  "feature_blocks": [
+    "core_parsed",
+    "season_relative",
+    "conference_relative"
+  ],
+  "include_bid_type_feature": true,
+  "include_team_feature": true,
+  "use_bid_type_selection": true,
+  "notes": "Reproduced v4-style feature set under the unified v5 evaluator.",
+  "season_rank_rmse_mean": 4.223527355875293,
+  "season_rank_rmse_std": 0.8811983611673797,
+  "full_rmse_zero_mean": 1.8125920736324932,
+  "full_rmse_zero_std": 0.38110875343362477,
+  "selected_count_test": 91,
+  "non_zero_count_test": 91
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "candidate_name": "v6_primary",
+    "description": "Primary hedge. Changes only the Davidson/Notre Dame ordering from v3_ensemble, a swap supported by v3 final assignment, v4, and the v5 single-model variants.",
+    "weights": "{\"base_rank\": 0.65, \"v3_order_rank\": 0.175, \"v5_ridge_rank\": 0.175}",
+    "changed_rows_vs_v3_ensemble": 2,
+    "changed_records": "2021-22-Davidson|2021-22-NotreDame"
+  },
+  {
+    "candidate_name": "v6_conservative_low_seed",
+    "description": "Most conservative alternative. Only touches a low-seed 61/62 swap while adding a small amount of stable current_v4 ridge signal.",
+    "weights": "{\"base_rank\": 0.75, \"v5_cur_ridge_rank\": 0.25}",
+    "changed_rows_vs_v3_ensemble": 2,
+    "changed_records": "2023-24-LongBeachSt.|2023-24-SaintPeter's"
+  },
+  {
+    "candidate_name": "v6_aggressive_ridge",
+    "description": "Higher-variance hedge driven by the strongest v5 ridge rank signal. Makes four medium-impact swaps versus v3_ensemble.",
+    "weights": "{\"base_rank\": 0.75, \"v5_ridge_rank\": 0.25}",
+    "changed_rows_vs_v3_ensemble": 4,
+    "changed_records": "2021-22-SouthernCalifornia|2021-22-IowaSt.|2023-24-NewMexico|2023-24-Clemson"
+  },
+  {
+    "candidate_name": "v6_lgbm_low_seed",
+    "description": "Alternative low-impact hedge using the v5 LightGBM rank signal. Changes only one 50/51 swap versus v3_ensemble.",
+    "weights": "{\"base_rank\": 0.75, \"v5_lgbm_rank\": 0.25}",
+    "changed_rows_vs_v3_ensemble": 2,
+    "changed_records": "2020-21-Winthrop|2020-21-Ohio"
+  }
+]

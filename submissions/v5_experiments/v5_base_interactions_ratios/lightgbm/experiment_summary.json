@@ -1,0 +1,23 @@
+{
+  "experiment_name": "v5_base_interactions_ratios",
+  "model_family": "lightgbm",
+  "status": "completed",
+  "feature_blocks": [
+    "core_parsed",
+    "missing_indicators",
+    "season_relative",
+    "conference_relative",
+    "robust_numeric",
+    "interaction_refinements"
+  ],
+  "include_bid_type_feature": true,
+  "include_team_feature": true,
+  "use_bid_type_selection": true,
+  "notes": "",
+  "season_rank_rmse_mean": 4.778711000113895,
+  "season_rank_rmse_std": 1.3079984529427655,
+  "full_rmse_zero_mean": 2.049803741108699,
+  "full_rmse_zero_std": 0.5617329691794604,
+  "selected_count_test": 91,
+  "non_zero_count_test": 91
+}

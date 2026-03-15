@@ -1,0 +1,452 @@
+RecordID,Season,Team,Conference,Bid Type,IsSelected,Score,PredAssignedSeed
+2020-21-Baylor,2020-21,Baylor,Big 12,AL,1,-2.3201776791499973,2.0
+2020-21-Arkansas,2020-21,Arkansas,SEC,AL,1,-13.717772572310363,9.0
+2020-21-Purdue,2020-21,Purdue,Big Ten,AL,1,-14.487255202259659,14.0
+2020-21-OklahomaSt.,2020-21,Oklahoma St.,Big 12,AL,1,-21.616970271752425,21.0
+2020-21-SouthernCalifornia,2020-21,Southern California,Pac-12,AL,1,-22.164682985765403,22.0
+2020-21-TexasTech,2020-21,Texas Tech,Big 12,AL,1,-19.66879644761795,15.0
+2020-21-Wisconsin,2020-21,Wisconsin,Big Ten,AL,1,-27.340003473369237,35.0
+2020-21-Syracuse,2020-21,Syracuse,ACC,AL,1,-36.330128231320806,49.0
+2020-21-UCLA,2020-21,UCLA,Pac-12,AL,1,-38.61176607309793,53.0
+2020-21-Winthrop,2020-21,Winthrop,Big South,AQ,1,-39.395605546774526,54.0
+2020-21-UCSantaBarbara,2020-21,UC Santa Barbara,Big West,AQ,1,-38.56633488139787,51.0
+2020-21-Ohio,2020-21,Ohio,MAC,AQ,1,-35.846552232919045,41.0
+2020-21-Liberty,2020-21,Liberty,ASUN,AQ,1,-53.7519771585185,63.0
+2020-21-UNCGreensboro,2020-21,UNC Greensboro,SoCon,AQ,1,-36.1466122786402,44.0
+2020-21-AbileneChristian,2020-21,Abilene Christian,Southland,AQ,1,-36.629200116247816,50.0
+2020-21-GrandCanyon,2020-21,Grand Canyon,WAC,AQ,1,-58.220522197828224,65.0
+2020-21-Drexel,2020-21,Drexel,CAA,AQ,1,-41.526532481996924,55.0
+2020-21-MountSt.Mary's,2020-21,Mount St. Mary's,NEC,AQ,1,-41.98779421250201,59.0
+2020-21-Duke,2020-21,Duke,ACC,,0,,0.0
+2020-21-Xavier,2020-21,Xavier,Big East,,0,,0.0
+2020-21-St.John's(NY),2020-21,St. John's (NY),Big East,,0,,0.0
+2020-21-WrightSt.,2020-21,Wright St.,Horizon,,0,,0.0
+2020-21-LouisianaTech,2020-21,Louisiana Tech,CUSA,,0,,0.0
+2020-21-Providence,2020-21,Providence,Big East,,0,,0.0
+2020-21-Belmont,2020-21,Belmont,OVC,,0,,0.0
+2020-21-Navy,2020-21,Navy,Patriot,,0,,0.0
+2020-21-Marquette,2020-21,Marquette,Big East,,0,,0.0
+2020-21-Wofford,2020-21,Wofford,SoCon,,0,,0.0
+2020-21-ArmyWestPoint,2020-21,Army West Point,Patriot,,0,,0.0
+2020-21-Butler,2020-21,Butler,Big East,,0,,0.0
+2020-21-Nebraska,2020-21,Nebraska,Big Ten,,0,,0.0
+2020-21-Bryant,2020-21,Bryant,NEC,,0,,0.0
+2020-21-GeorgeMason,2020-21,George Mason,Atlantic 10,,0,,0.0
+2020-21-Northeastern,2020-21,Northeastern,CAA,,0,,0.0
+2020-21-Siena,2020-21,Siena,MAAC,,0,,0.0
+2020-21-TexasA&M,2020-21,Texas A&M,SEC,,0,,0.0
+2020-21-CoastalCarolina,2020-21,Coastal Carolina,Sun Belt,,0,,0.0
+2020-21-Hofstra,2020-21,Hofstra,CAA,,0,,0.0
+2020-21-JacksonvilleSt.,2020-21,Jacksonville St.,OVC,,0,,0.0
+2020-21-Wagner,2020-21,Wagner,NEC,,0,,0.0
+2020-21-Temple,2020-21,Temple,The American,,0,,0.0
+2020-21-NorthDakotaSt.,2020-21,North Dakota St.,Summit League,,0,,0.0
+2020-21-BostonCollege,2020-21,Boston College,ACC,,0,,0.0
+2020-21-Rice,2020-21,Rice,CUSA,,0,,0.0
+2020-21-SaintPeter's,2020-21,Saint Peter's,MAAC,,0,,0.0
+2020-21-WakeForest,2020-21,Wake Forest,ACC,,0,,0.0
+2020-21-FresnoSt.,2020-21,Fresno St.,Mountain West,,0,,0.0
+2020-21-Washington,2020-21,Washington,Pac-12,,0,,0.0
+2020-21-HolyCross,2020-21,Holy Cross,Patriot,,0,,0.0
+2020-21-SouthAlabama,2020-21,South Alabama,Sun Belt,,0,,0.0
+2020-21-UAlbany,2020-21,UAlbany,America East,,0,,0.0
+2020-21-NorthernKy.,2020-21,Northern Ky.,Horizon,,0,,0.0
+2020-21-LIU,2020-21,LIU,NEC,,0,,0.0
+2020-21-Montana,2020-21,Montana,Big Sky,,0,,0.0
+2020-21-Charlotte,2020-21,Charlotte,CUSA,,0,,0.0
+2020-21-Milwaukee,2020-21,Milwaukee,Horizon,,0,,0.0
+2020-21-UNCW,2020-21,UNCW,CAA,,0,,0.0
+2020-21-IllinoisSt.,2020-21,Illinois St.,MVC,,0,,0.0
+2020-21-Longwood,2020-21,Longwood,Big South,,0,,0.0
+2020-21-UCSanDiego,2020-21,UC San Diego,Big West,,0,,0.0
+2020-21-Quinnipiac,2020-21,Quinnipiac,MAAC,,0,,0.0
+2020-21-GeorgeWashington,2020-21,George Washington,Atlantic 10,,0,,0.0
+2020-21-CoppinSt.,2020-21,Coppin St.,MEAC,,0,,0.0
+2020-21-Ga.Southern,2020-21,Ga. Southern,Sun Belt,,0,,0.0
+2020-21-SaintFrancis,2020-21,Saint Francis,NEC,,0,,0.0
+2020-21-NJIT,2020-21,NJIT,America East,,0,,0.0
+2020-21-IUIndy,2020-21,IU Indy,Horizon,,0,,0.0
+2020-21-LongBeachSt.,2020-21,Long Beach St.,Big West,,0,,0.0
+2020-21-GreenBay,2020-21,Green Bay,Horizon,,0,,0.0
+2020-21-HighPoint,2020-21,High Point,Big South,,0,,0.0
+2020-21-Lehigh,2020-21,Lehigh,Patriot,,0,,0.0
+2020-21-FGCU,2020-21,FGCU,ASUN,,0,,0.0
+2020-21-Jacksonville,2020-21,Jacksonville,ASUN,,0,,0.0
+2020-21-Hampton,2020-21,Hampton,Big South,,0,,0.0
+2020-21-CentralMich.,2020-21,Central Mich.,MAC,,0,,0.0
+2020-21-USCUpstate,2020-21,USC Upstate,Big South,,0,,0.0
+2020-21-RobertMorris,2020-21,Robert Morris,Horizon,,0,,0.0
+2020-21-Presbyterian,2020-21,Presbyterian,Big South,,0,,0.0
+2020-21-Fordham,2020-21,Fordham,Atlantic 10,,0,,0.0
+2020-21-CalPoly,2020-21,Cal Poly,Big West,,0,,0.0
+2020-21-Portland,2020-21,Portland,WCC,,0,,0.0
+2020-21-AlabamaA&M,2020-21,Alabama A&M,SWAC,,0,,0.0
+2020-21-Alcorn,2020-21,Alcorn,SWAC,,0,,0.0
+2020-21-AlabamaSt.,2020-21,Alabama St.,SWAC,,0,,0.0
+2020-21-Bethune-Cookman,2020-21,Bethune-Cookman,MEAC,,0,,0.0
+2020-21-Brown,2020-21,Brown,Ivy League,,0,,0.0
+2020-21-Cornell,2020-21,Cornell,Ivy League,,0,,0.0
+2020-21-Princeton,2020-21,Princeton,Ivy League,,0,,0.0
+2020-21-Yale,2020-21,Yale,Ivy League,,0,,0.0
+2021-22-Arizona,2021-22,Arizona,Pac-12,AQ,1,-3.968843241714875,2.0
+2021-22-TexasTech,2021-22,Texas Tech,Big 12,AL,1,-11.113368254160717,12.0
+2021-22-Iowa,2021-22,Iowa,Big Ten,AQ,1,-17.715686521594545,20.0
+2021-22-Illinois,2021-22,Illinois,Big Ten,AL,1,-16.82298115921166,14.0
+2021-22-MurraySt.,2021-22,Murray St.,OVC,AQ,1,-31.75952299925389,33.0
+2021-22-SanFrancisco,2021-22,San Francisco,WCC,AL,1,-25.201786945292028,25.0
+2021-22-SouthernCalifornia,2021-22,Southern California,Pac-12,AL,1,-30.56252419686126,26.0
+2021-22-Davidson,2021-22,Davidson,Atlantic 10,AL,1,-33.1407077716704,34.0
+2021-22-TCU,2021-22,TCU,Big 12,AL,1,-35.16579747496723,41.0
+2021-22-IowaSt.,2021-22,Iowa St.,Big 12,AL,1,-37.009044956405134,43.0
+2021-22-Wyoming,2021-22,Wyoming,Mountain West,AL,1,-33.77696845463152,37.0
+2021-22-OklahomaSt.,2021-22,Oklahoma St.,Big 12,,0,,0.0
+2021-22-NotreDame,2021-22,Notre Dame,ACC,AL,1,-40.98122544373631,51.0
+2021-22-BYU,2021-22,BYU,WCC,,0,,0.0
+2021-22-Creighton,2021-22,Creighton,Big East,AL,1,-34.18805020105091,40.0
+2021-22-Florida,2021-22,Florida,SEC,,0,,0.0
+2021-22-Chattanooga,2021-22,Chattanooga,SoCon,AQ,1,-40.634098547284154,49.0
+2021-22-SouthDakotaSt.,2021-22,South Dakota St.,Summit League,AQ,1,-39.80139510682836,47.0
+2021-22-Towson,2021-22,Towson,CAA,,0,,0.0
+2021-22-Richmond,2021-22,Richmond,Atlantic 10,AQ,1,-43.03029671950579,65.0
+2021-22-PennSt.,2021-22,Penn St.,Big Ten,,0,,0.0
+2021-22-Maryland,2021-22,Maryland,Big Ten,,0,,0.0
+2021-22-GrandCanyon,2021-22,Grand Canyon,WAC,,0,,0.0
+2021-22-UNI,2021-22,UNI,MVC,,0,,0.0
+2021-22-MiddleTenn.,2021-22,Middle Tenn.,CUSA,,0,,0.0
+2021-22-FloridaSt.,2021-22,Florida St.,ACC,,0,,0.0
+2021-22-Wofford,2021-22,Wofford,SoCon,,0,,0.0
+2021-22-Nevada,2021-22,Nevada,Mountain West,,0,,0.0
+2021-22-TexasSt.,2021-22,Texas St.,Sun Belt,,0,,0.0
+2021-22-Fla.Atlantic,2021-22,Fla. Atlantic,CUSA,,0,,0.0
+2021-22-Wagner,2021-22,Wagner,NEC,,0,,0.0
+2021-22-SouthernIll.,2021-22,Southern Ill.,MVC,,0,,0.0
+2021-22-UCSantaBarbara,2021-22,UC Santa Barbara,Big West,,0,,0.0
+2021-22-BostonCollege,2021-22,Boston College,ACC,,0,,0.0
+2021-22-SamHouston,2021-22,Sam Houston,WAC,,0,,0.0
+2021-22-NorthDakotaSt.,2021-22,North Dakota St.,Summit League,,0,,0.0
+2021-22-Drexel,2021-22,Drexel,CAA,,0,,0.0
+2021-22-NewMexico,2021-22,New Mexico,Mountain West,,0,,0.0
+2021-22-UCRiverside,2021-22,UC Riverside,Big West,,0,,0.0
+2021-22-WeberSt.,2021-22,Weber St.,Big Sky,,0,,0.0
+2021-22-Jacksonville,2021-22,Jacksonville,ASUN,,0,,0.0
+2021-22-UNCW,2021-22,UNCW,CAA,,0,,0.0
+2021-22-Charlotte,2021-22,Charlotte,CUSA,,0,,0.0
+2021-22-Cornell,2021-22,Cornell,Ivy League,,0,,0.0
+2021-22-Mercer,2021-22,Mercer,SoCon,,0,,0.0
+2021-22-WrightSt.,2021-22,Wright St.,Horizon,AQ,1,-42.85229853057128,52.0
+2021-22-Nicholls,2021-22,Nicholls,Southland,,0,,0.0
+2021-22-Niagara,2021-22,Niagara,MAAC,,0,,0.0
+2021-22-KansasCity,2021-22,Kansas City,Summit League,,0,,0.0
+2021-22-LMU(CA),2021-22,LMU (CA),WCC,,0,,0.0
+2021-22-Marist,2021-22,Marist,MAAC,,0,,0.0
+2021-22-SouthernU.,2021-22,Southern U.,SWAC,,0,,0.0
+2021-22-SanDiego,2021-22,San Diego,WCC,,0,,0.0
+2021-22-UCDavis,2021-22,UC Davis,Big West,,0,,0.0
+2021-22-DetroitMercy,2021-22,Detroit Mercy,Horizon,,0,,0.0
+2021-22-IndianaSt.,2021-22,Indiana St.,MVC,,0,,0.0
+2021-22-NewHampshire,2021-22,New Hampshire,America East,,0,,0.0
+2021-22-Marshall,2021-22,Marshall,CUSA,,0,,0.0
+2021-22-LIU,2021-22,LIU,NEC,,0,,0.0
+2021-22-OregonSt.,2021-22,Oregon St.,Pac-12,,0,,0.0
+2021-22-Northeastern,2021-22,Northeastern,CAA,,0,,0.0
+2021-22-Canisius,2021-22,Canisius,MAAC,,0,,0.0
+2021-22-TennesseeTech,2021-22,Tennessee Tech,OVC,,0,,0.0
+2021-22-HighPoint,2021-22,High Point,Big South,,0,,0.0
+2021-22-NewOrleans,2021-22,New Orleans,Southland,,0,,0.0
+2021-22-Alcorn,2021-22,Alcorn,SWAC,,0,,0.0
+2021-22-PortlandSt.,2021-22,Portland St.,Big Sky,,0,,0.0
+2021-22-Presbyterian,2021-22,Presbyterian,Big South,,0,,0.0
+2021-22-USCUpstate,2021-22,USC Upstate,Big South,,0,,0.0
+2021-22-JacksonSt.,2021-22,Jackson St.,SWAC,,0,,0.0
+2021-22-ArmyWestPoint,2021-22,Army West Point,Patriot,,0,,0.0
+2021-22-Pepperdine,2021-22,Pepperdine,WCC,,0,,0.0
+2021-22-SanJoseSt.,2021-22,San Jose St.,Mountain West,,0,,0.0
+2021-22-Denver,2021-22,Denver,Summit League,,0,,0.0
+2021-22-Grambling,2021-22,Grambling,SWAC,,0,,0.0
+2021-22-UTRGV,2021-22,UTRGV,WAC,,0,,0.0
+2021-22-Stetson,2021-22,Stetson,ASUN,,0,,0.0
+2021-22-SacramentoSt.,2021-22,Sacramento St.,Big Sky,,0,,0.0
+2021-22-FloridaA&M,2021-22,Florida A&M,SWAC,,0,,0.0
+2021-22-AlabamaA&M,2021-22,Alabama A&M,SWAC,,0,,0.0
+2021-22-Idaho,2021-22,Idaho,Big Sky,,0,,0.0
+2021-22-WesternMich.,2021-22,Western Mich.,MAC,,0,,0.0
+2021-22-RobertMorris,2021-22,Robert Morris,Horizon,,0,,0.0
+2021-22-SaintFrancis,2021-22,Saint Francis,NEC,,0,,0.0
+2021-22-HolyCross,2021-22,Holy Cross,Patriot,,0,,0.0
+2021-22-CharlestonSo.,2021-22,Charleston So.,Big South,,0,,0.0
+2021-22-Ark.-PineBluff,2021-22,Ark.-Pine Bluff,SWAC,,0,,0.0
+2021-22-EasternIll.,2021-22,Eastern Ill.,OVC,,0,,0.0
+2021-22-DelawareSt.,2021-22,Delaware St.,MEAC,,0,,0.0
+2021-22-IUIndy,2021-22,IU Indy,Horizon,,0,,0.0
+2022-23-Alabama,2022-23,Alabama,SEC,AQ,1,-6.3070533674413545,1.0
+2022-23-Kansas,2022-23,Kansas,Big 12,AL,1,-6.8098299977491825,3.0
+2022-23-SanDiegoSt.,2022-23,San Diego St.,Mountain West,AQ,1,-12.459554494849952,12.0
+2022-23-Baylor,2022-23,Baylor,Big 12,AL,1,-10.536011136450457,9.0
+2022-23-Arkansas,2022-23,Arkansas,SEC,AL,1,-24.95534713387253,17.0
+2022-23-Xavier,2022-23,Xavier,Big East,AL,1,-34.52951101117762,28.0
+2022-23-Miami(FL),2022-23,Miami (FL),ACC,AL,1,-35.71757724857325,39.0
+2022-23-Northwestern,2022-23,Northwestern,Big Ten,AL,1,-35.405301541751456,30.0
+2022-23-Liberty,2022-23,Liberty,ASUN,,0,,0.0
+2022-23-MississippiSt.,2022-23,Mississippi St.,SEC,AL,1,-36.57943375753665,47.0
+2022-23-SouthernCalifornia,2022-23,Southern California,Pac-12,AL,1,-36.557717151754545,43.0
+2022-23-Col.ofCharleston,2022-23,Col. of Charleston,CAA,AQ,1,-49.5630772082302,58.0
+2022-23-VCU,2022-23,VCU,Atlantic 10,AQ,1,-44.594795441004514,54.0
+2022-23-NewMexico,2022-23,New Mexico,Mountain West,,0,,0.0
+2022-23-Drake,2022-23,Drake,MVC,AQ,1,-47.43594572284098,56.0
+2022-23-KentSt.,2022-23,Kent St.,MAC,AQ,1,-33.08060489248802,20.0
+2022-23-TexasTech,2022-23,Texas Tech,Big 12,,0,,0.0
+2022-23-SamHouston,2022-23,Sam Houston,WAC,,0,,0.0
+2022-23-Bradley,2022-23,Bradley,MVC,,0,,0.0
+2022-23-Vanderbilt,2022-23,Vanderbilt,SEC,,0,,0.0
+2022-23-Furman,2022-23,Furman,SoCon,AQ,1,-37.242451822431796,49.0
+2022-23-Louisiana,2022-23,Louisiana,Sun Belt,AQ,1,-38.44250252741028,51.0
+2022-23-Nebraska,2022-23,Nebraska,Big Ten,,0,,0.0
+2022-23-UCSantaBarbara,2022-23,UC Santa Barbara,Big West,AQ,1,-37.363318928204826,50.0
+2022-23-MontanaSt.,2022-23,Montana St.,Big Sky,AQ,1,-52.002952630383504,65.0
+2022-23-SouthAlabama,2022-23,South Alabama,Sun Belt,,0,,0.0
+2022-23-LMU(CA),2022-23,LMU (CA),WCC,,0,,0.0
+2022-23-Washington,2022-23,Washington,Pac-12,,0,,0.0
+2022-23-Towson,2022-23,Towson,CAA,,0,,0.0
+2022-23-Butler,2022-23,Butler,Big East,,0,,0.0
+2022-23-Troy,2022-23,Troy,Sun Belt,,0,,0.0
+2022-23-Samford,2022-23,Samford,SoCon,,0,,0.0
+2022-23-GeorgeMason,2022-23,George Mason,Atlantic 10,,0,,0.0
+2022-23-BallSt.,2022-23,Ball St.,MAC,,0,,0.0
+2022-23-Georgia,2022-23,Georgia,SEC,,0,,0.0
+2022-23-Stetson,2022-23,Stetson,ASUN,,0,,0.0
+2022-23-LongBeachSt.,2022-23,Long Beach St.,Big West,,0,,0.0
+2022-23-TarletonSt.,2022-23,Tarleton St.,WAC,,0,,0.0
+2022-23-DePaul,2022-23,DePaul,Big East,,0,,0.0
+2022-23-Montana,2022-23,Montana,Big Sky,,0,,0.0
+2022-23-LouisianaTech,2022-23,Louisiana Tech,CUSA,,0,,0.0
+2022-23-A&M-CorpusChristi,2022-23,A&M-Corpus Christi,Southland,AQ,1,-61.44608758102973,66.0
+2022-23-EastCarolina,2022-23,East Carolina,The American,,0,,0.0
+2022-23-NewMexicoSt.,2022-23,New Mexico St.,WAC,,0,,0.0
+2022-23-Pacific,2022-23,Pacific,WCC,,0,,0.0
+2022-23-Drexel,2022-23,Drexel,CAA,,0,,0.0
+2022-23-UTEP,2022-23,UTEP,CUSA,,0,,0.0
+2022-23-Rice,2022-23,Rice,CUSA,,0,,0.0
+2022-23-AbileneChristian,2022-23,Abilene Christian,WAC,,0,,0.0
+2022-23-Siena,2022-23,Siena,MAAC,,0,,0.0
+2022-23-MurraySt.,2022-23,Murray St.,MVC,,0,,0.0
+2022-23-NorthDakotaSt.,2022-23,North Dakota St.,Summit League,,0,,0.0
+2022-23-Rider,2022-23,Rider,MAAC,,0,,0.0
+2022-23-FIU,2022-23,FIU,CUSA,,0,,0.0
+2022-23-NorthernAriz.,2022-23,Northern Ariz.,Big Sky,,0,,0.0
+2022-23-Jacksonville,2022-23,Jacksonville,ASUN,,0,,0.0
+2022-23-PurdueFortWayne,2022-23,Purdue Fort Wayne,Horizon,,0,,0.0
+2022-23-SoutheastMo.St.,2022-23,Southeast Mo. St.,OVC,AQ,1,-42.984131651481654,53.0
+2022-23-Alcorn,2022-23,Alcorn,SWAC,,0,,0.0
+2022-23-NIU,2022-23,NIU,MAC,,0,,0.0
+2022-23-IdahoSt.,2022-23,Idaho St.,Big Sky,,0,,0.0
+2022-23-Bellarmine,2022-23,Bellarmine,ASUN,,0,,0.0
+2022-23-UTRGV,2022-23,UTRGV,WAC,,0,,0.0
+2022-23-American,2022-23,American,Patriot,,0,,0.0
+2022-23-Fairfield,2022-23,Fairfield,MAAC,,0,,0.0
+2022-23-RhodeIsland,2022-23,Rhode Island,Atlantic 10,,0,,0.0
+2022-23-TennesseeTech,2022-23,Tennessee Tech,OVC,,0,,0.0
+2022-23-Lafayette,2022-23,Lafayette,Patriot,,0,,0.0
+2022-23-Lehigh,2022-23,Lehigh,Patriot,,0,,0.0
+2022-23-UCSanDiego,2022-23,UC San Diego,Big West,,0,,0.0
+2022-23-TennesseeSt.,2022-23,Tennessee St.,OVC,,0,,0.0
+2022-23-TexasSouthern,2022-23,Texas Southern,SWAC,AQ,1,-65.41858360090674,67.0
+2022-23-Bucknell,2022-23,Bucknell,Patriot,,0,,0.0
+2022-23-Merrimack,2022-23,Merrimack,NEC,,0,,0.0
+2022-23-KansasCity,2022-23,Kansas City,Summit League,,0,,0.0
+2022-23-Stonehill,2022-23,Stonehill,NEC,,0,,0.0
+2022-23-William&Mary,2022-23,William & Mary,CAA,,0,,0.0
+2022-23-EasternMich.,2022-23,Eastern Mich.,MAC,,0,,0.0
+2022-23-TheCitadel,2022-23,The Citadel,SoCon,,0,,0.0
+2022-23-Ark.-PineBluff,2022-23,Ark.-Pine Bluff,SWAC,,0,,0.0
+2022-23-CSUN,2022-23,CSUN,Big West,,0,,0.0
+2022-23-NewOrleans,2022-23,New Orleans,Southland,,0,,0.0
+2022-23-EasternIll.,2022-23,Eastern Ill.,OVC,,0,,0.0
+2022-23-SouthCarolinaSt.,2022-23,South Carolina St.,MEAC,,0,,0.0
+2022-23-Hampton,2022-23,Hampton,CAA,,0,,0.0
+2022-23-St.FrancisBrooklyn,2022-23,St. Francis Brooklyn,NEC,,0,,0.0
+2022-23-VMI,2022-23,VMI,SoCon,,0,,0.0
+2022-23-HoustonChristian,2022-23,Houston Christian,Southland,,0,,0.0
+2022-23-GreenBay,2022-23,Green Bay,Horizon,,0,,0.0
+2022-23-LIU,2022-23,LIU,NEC,,0,,0.0
+2022-23-Hartford,2022-23,Hartford,DI Independent,,0,,0.0
+2023-24-Uconn,2023-24,Uconn,Big East,AQ,1,-9.183215158386524,1.0
+2023-24-Alabama,2023-24,Alabama,SEC,AL,1,-15.495707211768385,16.0
+2023-24-Marquette,2023-24,Marquette,Big East,AL,1,-11.689682631181896,7.0
+2023-24-Baylor,2023-24,Baylor,Big 12,AL,1,-11.690098765502876,9.0
+2023-24-Wisconsin,2023-24,Wisconsin,Big Ten,AL,1,-19.611189866202196,19.0
+2023-24-NewMexico,2023-24,New Mexico,Mountain West,AQ,1,-35.739964013028434,42.0
+2023-24-Clemson,2023-24,Clemson,ACC,AL,1,-26.733704760071493,22.0
+2023-24-Villanova,2023-24,Villanova,Big East,,0,,0.0
+2023-24-WashingtonSt.,2023-24,Washington St.,Pac-12,AL,1,-30.22635236530779,26.0
+2023-24-OhioSt.,2023-24,Ohio St.,Big Ten,,0,,0.0
+2023-24-GrandCanyon,2023-24,Grand Canyon,WAC,AQ,1,-48.93695056747146,60.0
+2023-24-SouthCarolina,2023-24,South Carolina,SEC,AL,1,-30.200170699829105,24.0
+2023-24-Northwestern,2023-24,Northwestern,Big Ten,AL,1,-35.001692077385975,41.0
+2023-24-Virginia,2023-24,Virginia,ACC,AL,1,-36.1107714352099,43.0
+2023-24-Princeton,2023-24,Princeton,Ivy League,,0,,0.0
+2023-24-Oregon,2023-24,Oregon,Pac-12,AQ,1,-33.86688871675259,36.0
+2023-24-NCState,2023-24,NC State,ACC,AQ,1,-43.246220943470504,59.0
+2023-24-SMU,2023-24,SMU,The American,,0,,0.0
+2023-24-AppState,2023-24,App State,Sun Belt,,0,,0.0
+2023-24-BostonCollege,2023-24,Boston College,ACC,,0,,0.0
+2023-24-SouthernCalifornia,2023-24,Southern California,Pac-12,,0,,0.0
+2023-24-Minnesota,2023-24,Minnesota,Big Ten,,0,,0.0
+2023-24-SaintJoseph's,2023-24,Saint Joseph's,Atlantic 10,,0,,0.0
+2023-24-Georgia,2023-24,Georgia,SEC,,0,,0.0
+2023-24-Rutgers,2023-24,Rutgers,Big Ten,,0,,0.0
+2023-24-MoreheadSt.,2023-24,Morehead St.,OVC,AQ,1,-52.822582129401496,61.0
+2023-24-UCLA,2023-24,UCLA,Pac-12,,0,,0.0
+2023-24-Drexel,2023-24,Drexel,CAA,,0,,0.0
+2023-24-UTArlington,2023-24,UT Arlington,WAC,,0,,0.0
+2023-24-YoungstownSt.,2023-24,Youngstown St.,Horizon,,0,,0.0
+2023-24-SouthDakotaSt.,2023-24,South Dakota St.,Summit League,AQ,1,-40.68487792891066,47.0
+2023-24-WesternKy.,2023-24,Western Ky.,CUSA,AQ,1,-42.2218823147423,57.0
+2023-24-Ohio,2023-24,Ohio,MAC,,0,,0.0
+2023-24-Louisiana,2023-24,Louisiana,Sun Belt,,0,,0.0
+2023-24-SamHouston,2023-24,Sam Houston,CUSA,,0,,0.0
+2023-24-PurdueFortWayne,2023-24,Purdue Fort Wayne,Horizon,,0,,0.0
+2023-24-Fairfield,2023-24,Fairfield,MAAC,,0,,0.0
+2023-24-Longwood,2023-24,Longwood,Big South,AQ,1,-61.23325594334786,62.0
+2023-24-UNCAsheville,2023-24,UNC Asheville,Big South,,0,,0.0
+2023-24-Delaware,2023-24,Delaware,CAA,,0,,0.0
+2023-24-LongBeachSt.,2023-24,Long Beach St.,Big West,AQ,1,-40.338459935894335,45.0
+2023-24-SFA,2023-24,SFA,WAC,,0,,0.0
+2023-24-SaintPeter's,2023-24,Saint Peter's,MAAC,AQ,1,-63.76319496778411,63.0
+2023-24-EastCarolina,2023-24,East Carolina,The American,,0,,0.0
+2023-24-Gardner-Webb,2023-24,Gardner-Webb,Big South,,0,,0.0
+2023-24-Temple,2023-24,Temple,The American,,0,,0.0
+2023-24-GeorgeWashington,2023-24,George Washington,Atlantic 10,,0,,0.0
+2023-24-Vanderbilt,2023-24,Vanderbilt,SEC,,0,,0.0
+2023-24-TexasSt.,2023-24,Texas St.,Sun Belt,,0,,0.0
+2023-24-MontanaSt.,2023-24,Montana St.,Big Sky,AQ,1,-66.11088695802867,65.0
+2023-24-Merrimack,2023-24,Merrimack,NEC,,0,,0.0
+2023-24-Mercer,2023-24,Mercer,SoCon,,0,,0.0
+2023-24-JacksonvilleSt.,2023-24,Jacksonville St.,CUSA,,0,,0.0
+2023-24-LamarUniversity,2023-24,Lamar University,Southland,,0,,0.0
+2023-24-Radford,2023-24,Radford,Big South,,0,,0.0
+2023-24-Nicholls,2023-24,Nicholls,Southland,,0,,0.0
+2023-24-MountSt.Mary's,2023-24,Mount St. Mary's,MAAC,,0,,0.0
+2023-24-Northeastern,2023-24,Northeastern,CAA,,0,,0.0
+2023-24-NorthFlorida,2023-24,North Florida,ASUN,,0,,0.0
+2023-24-NorthAla.,2023-24,North Ala.,ASUN,,0,,0.0
+2023-24-BallSt.,2023-24,Ball St.,MAC,,0,,0.0
+2023-24-WesternIll.,2023-24,Western Ill.,OVC,,0,,0.0
+2023-24-KennesawSt.,2023-24,Kennesaw St.,ASUN,,0,,0.0
+2023-24-Denver,2023-24,Denver,Summit League,,0,,0.0
+2023-24-CentralMich.,2023-24,Central Mich.,MAC,,0,,0.0
+2023-24-Omaha,2023-24,Omaha,Summit League,,0,,0.0
+2023-24-SouthernUtah,2023-24,Southern Utah,WAC,,0,,0.0
+2023-24-Binghamton,2023-24,Binghamton,America East,,0,,0.0
+2023-24-Bucknell,2023-24,Bucknell,Patriot,,0,,0.0
+2023-24-SIUE,2023-24,SIUE,OVC,,0,,0.0
+2023-24-FIU,2023-24,FIU,CUSA,,0,,0.0
+2023-24-RobertMorris,2023-24,Robert Morris,Horizon,,0,,0.0
+2023-24-Bethune-Cookman,2023-24,Bethune-Cookman,SWAC,,0,,0.0
+2023-24-ULM,2023-24,ULM,Sun Belt,,0,,0.0
+2023-24-Lafayette,2023-24,Lafayette,Patriot,,0,,0.0
+2023-24-AlabamaSt.,2023-24,Alabama St.,SWAC,,0,,0.0
+2023-24-Navy,2023-24,Navy,Patriot,,0,,0.0
+2023-24-DePaul,2023-24,DePaul,Big East,,0,,0.0
+2023-24-NJIT,2023-24,NJIT,America East,,0,,0.0
+2023-24-UTRGV,2023-24,UTRGV,WAC,,0,,0.0
+2023-24-NorthwesternSt.,2023-24,Northwestern St.,Southland,,0,,0.0
+2023-24-N.C.A&T,2023-24,N.C. A&T,CAA,,0,,0.0
+2023-24-CentralArk.,2023-24,Central Ark.,ASUN,,0,,0.0
+2023-24-LIU,2023-24,LIU,NEC,,0,,0.0
+2023-24-UMES,2023-24,UMES,MEAC,,0,,0.0
+2023-24-SaintFrancis,2023-24,Saint Francis,NEC,,0,,0.0
+2023-24-Siena,2023-24,Siena,MAAC,,0,,0.0
+2023-24-DetroitMercy,2023-24,Detroit Mercy,Horizon,,0,,0.0
+2023-24-IUIndy,2023-24,IU Indy,Horizon,,0,,0.0
+2023-24-MississippiVal.,2023-24,Mississippi Val.,SWAC,,0,,0.0
+2024-25-Auburn,2024-25,Auburn,SEC,AL,1,-5.494492810489235,1.0
+2024-25-IowaSt.,2024-25,Iowa St.,Big 12,AL,1,-12.968592423007244,11.0
+2024-25-Kentucky,2024-25,Kentucky,SEC,AL,1,-11.956179349987659,10.0
+2024-25-Wisconsin,2024-25,Wisconsin,Big Ten,AL,1,-15.020937171931646,12.0
+2024-25-SaintMary's(CA),2024-25,Saint Mary's (CA),WCC,AL,1,-18.950392956843356,18.0
+2024-25-Clemson,2024-25,Clemson,ACC,AL,1,-21.63641090258313,20.0
+2024-25-UCSanDiego,2024-25,UC San Diego,Big West,AQ,1,-31.901833956546223,47.0
+2024-25-OhioSt.,2024-25,Ohio St.,Big Ten,,0,,0.0
+2024-25-BoiseSt.,2024-25,Boise St.,Mountain West,,0,,0.0
+2024-25-Memphis,2024-25,Memphis,The American,AQ,1,-30.29128724435987,27.0
+2024-25-Cincinnati,2024-25,Cincinnati,Big 12,,0,,0.0
+2024-25-WestVirginia,2024-25,West Virginia,Big 12,,0,,0.0
+2024-25-Northwestern,2024-25,Northwestern,Big Ten,,0,,0.0
+2024-25-Indiana,2024-25,Indiana,Big Ten,,0,,0.0
+2024-25-Villanova,2024-25,Villanova,Big East,,0,,0.0
+2024-25-Nebraska,2024-25,Nebraska,Big Ten,,0,,0.0
+2024-25-Iowa,2024-25,Iowa,Big Ten,,0,,0.0
+2024-25-NorthTexas,2024-25,North Texas,The American,,0,,0.0
+2024-25-Yale,2024-25,Yale,Ivy League,AQ,1,-51.98564660459905,66.0
+2024-25-Stanford,2024-25,Stanford,ACC,,0,,0.0
+2024-25-Georgetown,2024-25,Georgetown,Big East,,0,,0.0
+2024-25-LSU,2024-25,LSU,SEC,,0,,0.0
+2024-25-GrandCanyon,2024-25,Grand Canyon,WAC,AQ,1,-53.52475623596528,67.0
+2024-25-Providence,2024-25,Providence,Big East,,0,,0.0
+2024-25-NotreDame,2024-25,Notre Dame,ACC,,0,,0.0
+2024-25-UAB,2024-25,UAB,The American,,0,,0.0
+2024-25-LoyolaChicago,2024-25,Loyola Chicago,Atlantic 10,,0,,0.0
+2024-25-JacksonvilleSt.,2024-25,Jacksonville St.,CUSA,,0,,0.0
+2024-25-Belmont,2024-25,Belmont,MVC,,0,,0.0
+2024-25-Wofford,2024-25,Wofford,SoCon,AQ,1,-39.738810512853235,51.0
+2024-25-Milwaukee,2024-25,Milwaukee,Horizon,,0,,0.0
+2024-25-NorthDakotaSt.,2024-25,North Dakota St.,Summit League,,0,,0.0
+2024-25-RobertMorris,2024-25,Robert Morris,Horizon,AQ,1,-41.35931949910861,54.0
+2024-25-Col.ofCharleston,2024-25,Col. of Charleston,CAA,,0,,0.0
+2024-25-RhodeIsland,2024-25,Rhode Island,Atlantic 10,,0,,0.0
+2024-25-UTEP,2024-25,UTEP,CUSA,,0,,0.0
+2024-25-Radford,2024-25,Radford,Big South,,0,,0.0
+2024-25-LMU(CA),2024-25,LMU (CA),WCC,,0,,0.0
+2024-25-Winthrop,2024-25,Winthrop,Big South,,0,,0.0
+2024-25-VirginiaTech,2024-25,Virginia Tech,ACC,,0,,0.0
+2024-25-AppState,2024-25,App State,Sun Belt,,0,,0.0
+2024-25-SanJoseSt.,2024-25,San Jose St.,Mountain West,,0,,0.0
+2024-25-SoutheastMo.St.,2024-25,Southeast Mo. St.,OVC,,0,,0.0
+2024-25-SouthFla.,2024-25,South Fla.,The American,,0,,0.0
+2024-25-YoungstownSt.,2024-25,Youngstown St.,Horizon,,0,,0.0
+2024-25-Quinnipiac,2024-25,Quinnipiac,MAAC,,0,,0.0
+2024-25-UNCAsheville,2024-25,UNC Asheville,Big South,,0,,0.0
+2024-25-BostonCollege,2024-25,Boston College,ACC,,0,,0.0
+2024-25-Valparaiso,2024-25,Valparaiso,MVC,,0,,0.0
+2024-25-SoutheasternLa.,2024-25,Southeastern La.,Southland,,0,,0.0
+2024-25-Bucknell,2024-25,Bucknell,Patriot,,0,,0.0
+2024-25-Brown,2024-25,Brown,Ivy League,,0,,0.0
+2024-25-Hofstra,2024-25,Hofstra,CAA,,0,,0.0
+2024-25-William&Mary,2024-25,William & Mary,CAA,,0,,0.0
+2024-25-UTArlington,2024-25,UT Arlington,WAC,,0,,0.0
+2024-25-MountSt.Mary's,2024-25,Mount St. Mary's,MAAC,AQ,1,-43.37706834027858,59.0
+2024-25-UCDavis,2024-25,UC Davis,Big West,,0,,0.0
+2024-25-UMassLowell,2024-25,UMass Lowell,America East,,0,,0.0
+2024-25-CSUBakersfield,2024-25,CSU Bakersfield,Big West,,0,,0.0
+2024-25-Iona,2024-25,Iona,MAAC,,0,,0.0
+2024-25-Richmond,2024-25,Richmond,Atlantic 10,,0,,0.0
+2024-25-Monmouth,2024-25,Monmouth,CAA,,0,,0.0
+2024-25-FIU,2024-25,FIU,CUSA,,0,,0.0
+2024-25-Mercer,2024-25,Mercer,SoCon,,0,,0.0
+2024-25-JacksonSt.,2024-25,Jackson St.,SWAC,,0,,0.0
+2024-25-GeorgiaSt.,2024-25,Georgia St.,Sun Belt,,0,,0.0
+2024-25-Navy,2024-25,Navy,Patriot,,0,,0.0
+2024-25-Tulsa,2024-25,Tulsa,The American,,0,,0.0
+2024-25-AlabamaSt.,2024-25,Alabama St.,SWAC,AQ,1,-44.296343549632475,60.0
+2024-25-Bethune-Cookman,2024-25,Bethune-Cookman,SWAC,,0,,0.0
+2024-25-LIU,2024-25,LIU,NEC,,0,,0.0
+2024-25-CharlestonSo.,2024-25,Charleston So.,Big South,,0,,0.0
+2024-25-UMBC,2024-25,UMBC,America East,,0,,0.0
+2024-25-ArmyWestPoint,2024-25,Army West Point,Patriot,,0,,0.0
+2024-25-UtahTech,2024-25,Utah Tech,WAC,,0,,0.0
+2024-25-HolyCross,2024-25,Holy Cross,Patriot,,0,,0.0
+2024-25-Rider,2024-25,Rider,MAAC,,0,,0.0
+2024-25-IUIndy,2024-25,IU Indy,Horizon,,0,,0.0
+2024-25-Howard,2024-25,Howard,MEAC,,0,,0.0
+2024-25-Louisiana,2024-25,Louisiana,Sun Belt,,0,,0.0
+2024-25-SouthernInd.,2024-25,Southern Ind.,OVC,,0,,0.0
+2024-25-MorganSt.,2024-25,Morgan St.,MEAC,,0,,0.0
+2024-25-N.C.A&T,2024-25,N.C. A&T,CAA,,0,,0.0
+2024-25-OralRoberts,2024-25,Oral Roberts,Summit League,,0,,0.0
+2024-25-SacramentoSt.,2024-25,Sacramento St.,Big Sky,,0,,0.0
+2024-25-ULM,2024-25,ULM,Sun Belt,,0,,0.0
+2024-25-LeMoyne,2024-25,Le Moyne,NEC,,0,,0.0
+2024-25-NewHampshire,2024-25,New Hampshire,America East,,0,,0.0
+2024-25-ChicagoSt.,2024-25,Chicago St.,NEC,,0,,0.0
+2024-25-TheCitadel,2024-25,The Citadel,SoCon,,0,,0.0
+2024-25-MississippiVal.,2024-25,Mississippi Val.,SWAC,,0,,0.0
