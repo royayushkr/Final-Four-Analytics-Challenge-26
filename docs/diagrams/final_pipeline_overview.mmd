@@ -1,0 +1,13 @@
+flowchart LR
+    A["Historical Team Metrics 2020-21 to 2024-25"] --> B["Attach Historical True Seeds and Historical AQ/AL Labels"]
+    B --> C["Feature Engineering"]
+    C --> D["Bid-Class Model: LogisticRegression"]
+    C --> E["Seed-Strength Model: RidgeCV"]
+    D --> F["Predicted AQ, AL, NONE Probabilities"]
+    E --> G["Seed Strength Score"]
+    F --> H["Combined Final Score"]
+    G --> H
+    H --> I["Conservative AQ/AL Post-Processing"]
+    I --> J["Select Final 68 Teams"]
+    J --> K["Assign Unique Seeds 1 to 68"]
+    K --> L["Write Final Submission CSV"]

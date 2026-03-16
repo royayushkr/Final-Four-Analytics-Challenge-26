@@ -20,6 +20,12 @@ Colab-ready notebook for rerunning the full pipeline:
 
 - `kaggle/final_private_2026_v8_colab.ipynb`
 
+Presentation-ready diagram pack:
+
+- `docs/diagrams.md`
+- `docs/assets/*.svg`
+- `docs/assets/*.png`
+
 Main evaluation artifacts:
 
 - `artifacts/final_20260315_eval/candidate_summary_v8.csv`

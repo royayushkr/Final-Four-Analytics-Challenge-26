@@ -1,0 +1,25 @@
+flowchart LR
+    subgraph HistoricalData["Historical supervised universe"]
+        T1["Training_Set2.0"]
+        T2["Historical Test_Set2.0"]
+        T3["historical_true_seeds_2021_2025.csv"]
+    end
+
+    subgraph Diagnostics["Diagnostics only"]
+        W1["2026-02-06 to 2026-03-08 weekly snapshots"]
+    end
+
+    subgraph FinalInference["Final inference only"]
+        F1["2026-03-15 snapshot"]
+    end
+
+    T1 --> M["Build labeled historical universe"]
+    T2 --> M
+    T3 --> M
+    M --> V["Rolling-origin validation and model selection"]
+    V --> R["Refit chosen model on all historical seasons"]
+    R --> P["Predict 2026-03-15 only"]
+    W1 --> S["Stability checks"]
+    S --> V
+    P --> Q["Quota-aware field selection and seed assignment"]
+    Q --> O["submission_2026_20260315.csv"]

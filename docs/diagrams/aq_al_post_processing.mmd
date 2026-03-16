@@ -1,0 +1,9 @@
+flowchart LR
+    A["Score all 365 teams"] --> B["Rank by final combined score"]
+    B --> C["Lock top 24 teams by overall score"]
+    C --> D["Assign provisional AQ/AL labels from bid-class probabilities"]
+    D --> E["Apply AQ/AL quota mainly to the remaining field"]
+    E --> F["Reach exactly 31 AQ and 37 AL"]
+    F --> G["Sort final 68 by final score"]
+    G --> H["Assign seeds 1 to 68"]
+    H --> I["Assign 0 to remaining 297 teams"]
