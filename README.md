@@ -26,15 +26,11 @@ Presentation-ready diagram pack:
 - `docs/assets/*.svg`
 - `docs/assets/*.png`
 
-Main evaluation artifacts:
+Supporting evaluation artifacts:
 
-- `artifacts/final_20260315_eval/candidate_summary_v8.csv`
-- `artifacts/final_20260315_eval/rolling_origin_metrics_v8.csv`
-- `artifacts/final_20260315_eval/leave_one_season_out_metrics_v8.csv`
-- `artifacts/final_20260315_eval/weekly_stability_metrics_v8.csv`
+- `artifacts/final_20260315_eval/`
 - `artifacts/final_20260315_eval/final_selection_audit_v8.csv`
 - `artifacts/final_20260315_eval/feature_importance_v8.csv`
-- `artifacts/final_20260315_eval/model_comparison_v8.json`
 
 ## 2) Final Executive Summary
 
@@ -57,19 +53,23 @@ Final selected model:
 
 Why this model was shipped:
 
-- best weighted rolling-origin full RMSE after the final conservative AQ/AL pass
-- best weighted MAE among active candidates
-- best weighted inclusion F1 among active candidates
-- much simpler than the boosted and ensemble alternatives
-- more stable after the quota-handling fix than the earlier quota-heavy selection logic
+- it was the simplest final pipeline that still captured both tournament entry path and seed ordering
+- it stayed aligned with the private one-shot prediction setting after the final quota correction
+- it was easier to explain and defend than the boosted and ensemble alternatives
+- it handled the top of the bracket more realistically after the conservative automatic-bid and at-large adjustment pass
 
-Final weighted validation summary from `candidate_summary_v8.csv`:
+What worked in the final design:
 
-| Candidate | Bid Model | Seed Model | Weighted Full RMSE | Weighted Full MAE | Weighted Inclusion F1 | RMSE Std |
-|---|---|---|---:|---:|---:|---:|
-| `exp3_logit_bid_ridge_seed` | `LogisticRegression` | `RidgeCV` | `17.0347` | `5.6208` | `0.7706` | `0.3336` |
-| `exp4_lgbm_bid_ridge_seed_cfa` | `LightGBMClassifier` | `RidgeCV + CFA` | `17.0422` | `5.6858` | `0.7691` | `0.6102` |
-| `exp5_lgbm_bid_seed_ensemble` | `LightGBMClassifier` | `RidgeCV + LightGBMRegressor` | `17.2655` | `5.6539` | `0.7691` | `0.7479` |
+- rebuilding a fully labeled historical universe instead of relying on censored training rows
+- separating bid-path prediction from seed-strength ranking
+- using committee-style feature engineering rather than generic feature dumping
+- applying quota logic mainly in the back half of the field instead of forcing it across the full ranking
+
+What did not work as well:
+
+- earlier quota-heavy logic that distorted the top seed lines
+- more complex boosted and blended candidates that added complexity without improving the final production path enough to justify shipping them
+- earlier private versions that still learned from incomplete historical tournament labels
 
 Final submission checks:
 
@@ -314,7 +314,7 @@ Target:
 
 Purpose:
 
-- rank likely tournament teams by overall seed strength in a stable, low-variance way
+- rank likely tournament teams by overall seed strength in a stable, interpretable way
 
 ### Final score combination
 
@@ -327,47 +327,51 @@ The exact selected field is then created through conservative quota-aware post-p
 
 ## 9) Validation Framework
 
-The final production model was chosen using temporally realistic validation.
+The final production model was chosen using temporally realistic validation rather than random cross-validation or leaderboard-style iteration.
 
 ### Primary historical validation
 
-Rolling-origin folds:
+The main screening pass used rolling-origin season splits:
 
 - `2020-21 + 2021-22 -> 2022-23`
 - `2020-21 + 2021-22 + 2022-23 -> 2023-24`
 - `2020-21 + 2021-22 + 2022-23 + 2023-24 -> 2024-25`
 
-Fold weights:
+This made the validation setup look more like the real forecasting problem, where the model has to learn from past seasons and predict a future one.
 
-- `0.2`
-- `0.3`
-- `0.5`
+The shortlist was judged using three types of checks:
 
-Main metrics tracked:
-
-- full RMSE on overall seed with non-selected teams predicted as `0`
-- full MAE
-- selected-only RMSE
-- tournament inclusion precision, recall, F1
-- bucket accuracy
-- selected-team Spearman rank correlation
-- training time
+- overall seed-order quality across the full season universe
+- tournament-field quality, especially near the bubble
+- ranking stability and realism after post-processing
 
 ### Secondary validation
 
-Leave-one-season-out validation was run on the shortlist after the rolling-origin screen.
+Leave-one-season-out validation was used as a secondary stress test once the shortlist was small enough to compare carefully.
 
 ### 2026 stability diagnostics
 
-The final shortlist was scored on every weekly `2026` snapshot without refitting.
+The final shortlist was also scored on every weekly `2026` snapshot without refitting.
 
-Stability metrics:
+Those weekly checks were used to answer questions like:
 
-- top-68 Jaccard overlap
-- top-16 overlap
-- mean seed movement within the top 80
+- does the projected field change too aggressively from week to week
+- do the top seed lines remain stable near Selection Sunday
+- does the post-processing behave realistically when the bubble tightens
 
-These diagnostics were used as a tie-break, not as a replacement for historical validation.
+### What worked and what did not
+
+What worked:
+
+- season-blocked validation instead of mixed-season random folds
+- separating historical model selection from final March 15 inference
+- using weekly `2026` snapshots as a stability check rather than as extra training data
+
+What did not work:
+
+- earlier evaluation setups that assumed partial labels were complete labels
+- more complex candidate families that were harder to stabilize near the bubble
+- aggressive quota logic before the final conservative correction
 
 ## 10) Final 2026 Field Snapshot
 
