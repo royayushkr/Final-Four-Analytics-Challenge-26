@@ -369,32 +369,7 @@ Stability metrics:
 
 These diagnostics were used as a tie-break, not as a replacement for historical validation.
 
-## 10) Final Candidate Comparison
-
-Final shortlisted candidates:
-
-| Candidate | Description | Weighted Full RMSE | Weighted Full MAE | Inclusion F1 | RMSE Std | Mean Train Seconds |
-|---|---|---:|---:|---:|---:|---:|
-| `exp3_logit_bid_ridge_seed` | `LogisticRegression + RidgeCV` | `17.0347` | `5.6208` | `0.7706` | `0.3336` | `0.0710` |
-| `exp4_lgbm_bid_ridge_seed_cfa` | `LightGBMClassifier + RidgeCV + rank fusion` | `17.0422` | `5.6858` | `0.7691` | `0.6102` | `3.0842` |
-| `exp5_lgbm_bid_seed_ensemble` | `LightGBMClassifier + RidgeCV + LightGBMRegressor` | `17.2655` | `5.6539` | `0.7691` | `0.7479` | `4.0621` |
-
-Weekly stability summary for the near-best candidates:
-
-| Candidate | Top68 Jaccard | Top16 Overlap | Top80 Mean Seed Movement |
-|---|---:|---:|---:|
-| `exp3_logit_bid_ridge_seed` | `0.8282` | `0.8671` | `8.6896` |
-| `exp4_lgbm_bid_ridge_seed_cfa` | `0.8866` | `0.8497` | `8.0533` |
-
-Reason the final model remained `exp3`:
-
-- it finished with the best weighted rolling RMSE after the quota fix
-- it also had the best weighted MAE
-- it had the strongest inclusion F1
-- it had the lowest season-to-season RMSE variance by a clear margin
-- it was the simplest and fastest model in the shortlist
-
-## 11) Final 2026 Field Snapshot
+## 10) Final 2026 Field Snapshot
 
 Current top `12` predicted seeds from the final audit:
 
@@ -430,7 +405,7 @@ Source:
 
 - `artifacts/final_20260315_eval/final_selection_audit_v8.csv`
 
-## 12) How to Reproduce the Final Submission
+## 11) How to Reproduce the Final Submission
 
 ### Local command-line run
 
@@ -458,7 +433,7 @@ The notebook includes:
 - shortlist selection
 - final retraining and final CSV export
 
-## 13) Repository Structure Relevant to the Final Pipeline
+## 12) Repository Structure Relevant to the Final Pipeline
 
 ```text
 final-four-analytics-challenge-26/
@@ -496,7 +471,7 @@ final-four-analytics-challenge-26/
         └── submission_kaggle_v8_exp3_loocv.csv
 ```
 
-## 14) Historical Kaggle Backtest Using the Final Model Family
+## 13) Historical Kaggle Backtest Using the Final Model Family
 
 A leakage-aware historical Kaggle-format backtest was also created using the same `v8` family.
 
@@ -513,7 +488,7 @@ Important note:
 - it is not the production `2025-26` competition submission
 - it was generated specifically to avoid scoring the historical Kaggle test rows in-sample
 
-## 15) Research and Strategy Review
+## 14) Research and Strategy Review
 
 This project reviewed several modeling ideas before the final `v8` choice.
 
@@ -549,7 +524,7 @@ Why deep models were not adopted:
 - the training target is noisy and highly structured by committee behavior
 - tree and linear baselines remained more stable and easier to validate
 
-## 16) Iterative Development History
+## 15) Iterative Development History
 
 The repository includes earlier versions because they were part of the path that led to `v8`.
 
@@ -575,7 +550,7 @@ The older sections remain useful because they explain:
 - why some stronger-looking Kaggle artifacts are not valid final choices for `2025-26`
 - how the project moved from leaderboard-oriented iteration to one-shot private forecasting
 
-## 17) Earlier Competition-Facing Artifacts and Archives
+## 16) Earlier Competition-Facing Artifacts and Archives
 
 Earlier competition-era folders are preserved for traceability.
 
@@ -597,7 +572,7 @@ How to interpret them now:
 - they are not the final private `2025-26` production submission
 - they should not override the `v8` path documented above
 
-## 18) Final Recommendation
+## 17) Final Recommendation
 
 If you only need the production assets, use these four files:
 
